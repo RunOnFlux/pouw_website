@@ -20,7 +20,7 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background: rgba(217, 217, 217, 0.01);
+    background: rgba(156, 156, 156, 0.5);
     backdrop-filter: blur(15px);
     position: fixed;
     top: 0;
@@ -65,14 +65,13 @@ li[name="dropdownCont"] {
     width: 320px;
     display: flex;
     align-items: center;
-    justify-self: center;
 }
 
 li[name="buttons"] {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 
@@ -206,7 +205,6 @@ li a:active {
 
 
 .service {
-    background-color: #071125;
     height: 2100px;
     background-image: url(img/line.svg), url(img/line2.svg);
     background-size: 17%, 17%;
@@ -254,7 +252,7 @@ li a:active {
 .gradiantBorder {
     border-radius: 25px;
     border: double 1.5px transparent;
-    background-image: linear-gradient(169.18deg, #030f2a, #09142d), radial-gradient(circle at top, #D2EEFF -19.31%, #5CBDFF 8.35%, #528EFC 40.93%, #8B94F3 66.13%, #A08FCE 98.71%);
+    background-image: linear-gradient(169.18deg, #fff, #e4e8f3), radial-gradient(circle at top, #D2EEFF -19.31%, #5CBDFF 8.35%, #528EFC 40.93%, #8B94F3 66.13%, #A08FCE 98.71%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
  
@@ -322,7 +320,7 @@ li a:active {
     height: 100%;
     border-radius: 25px;
     border: double 1.5px transparent;
-    background-image: linear-gradient(169.18deg, #030f2a, #09142d), radial-gradient(circle at top, #D2EEFF -19.31%, #5CBDFF 8.35%, #528EFC 40.93%, #8B94F3 66.13%, #A08FCE 98.71%);
+    background-image: linear-gradient(169.18deg, #fff, #e4e8f3), radial-gradient(circle at top, #D2EEFF -19.31%, #5CBDFF 8.35%, #528EFC 40.93%, #8B94F3 66.13%, #A08FCE 98.71%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
     overflow: hidden;
@@ -358,7 +356,6 @@ li a:active {
 .offers{
     width: 100%;
     height: 1000px;
-    background-color: #071125;
     background-image: url(img/pricesTop.png);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -374,7 +371,7 @@ li a:active {
     overflow: hidden;
     /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), rgba(0, 16, 40, 0.80); */
     border: double 3px transparent;
-    background-image: linear-gradient(169.18deg, #020e22, #040f20), radial-gradient(circle at top, #D2EEFF -19.31%, #5CBDFF 8.35%, #528EFC 40.93%, #8B94F3 66.13%, #A08FCE 98.71%);
+    background-image: linear-gradient(169.18deg, #fff, #e4e8f3), radial-gradient(circle at top, #D2EEFF -19.31%, #5CBDFF 8.35%, #528EFC 40.93%, #8B94F3 66.13%, #A08FCE 98.71%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
 }
@@ -390,11 +387,11 @@ li a:active {
   }
   
 .table1  td, .table1 th {
-    border-right: 1px solid rgba(241, 243, 249, 0.40);
-    border-bottom: 1px solid rgba(241, 243, 249, 0.40);
+    border-right: 1px solid rgba(205, 210, 226, 0.8);
+    border-bottom: 1px solid rgba(205, 210, 226, 0.8);
     text-align: left;
     padding: 8px;
-    color: #FFF;
+    color: black;
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
@@ -402,13 +399,19 @@ li a:active {
     line-height: 24px; /* 150% */
     letter-spacing: -0.1px;
   }
+
+  .table1 th img{
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    padding: 5px;
+    border-radius: 15px;
+  }
   tr[name="grey"] {
     background: linear-gradient(135deg, rgba(92, 186, 255, 0.10) 0%, rgba(154, 145, 217, 0.10) 100%);
   }
 
   td[name="grad"], th[name="grad"], td[name="grad2"]{
     border: double 3px transparent;
-    background-image: linear-gradient(169.18deg, #01081a, rgb(4, 14, 37)), radial-gradient(circle at top, #D2EEFF -19.31%, #5CBDFF 8.35%, #528EFC 40.93%, #8B94F3 66.13%, #A08FCE 98.71%);
+    background-image: linear-gradient(169.18deg, #fff, #e4e8f3), radial-gradient(circle at top, #D2EEFF -19.31%, #5CBDFF 8.35%, #528EFC 40.93%, #8B94F3 66.13%, #A08FCE 98.71%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
   }
@@ -436,15 +439,20 @@ li a:active {
 
   .ecosystem{
     width: 100%;
-    height: 500px;
-    background-color: #071125;
+    height: 500px;    
   }
+
+  .ecosystem .partnersCont{
+    padding: 15px;
+    border-radius: 15px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+  }
+  
 
 
   .metrics{
     width: 100%;
     height: 800px;
-    background-color: #071125;
   }
 
   .gridCont{
@@ -469,7 +477,7 @@ li a:active {
   }
 
   .smallText .percent{
-    color: rgba(255, 255, 255, 0.70);
+    color: rgba(0, 0, 0, 0.7);
     font-family: Montserrat;
     font-size: 12px;
     font-style: italic;
@@ -494,7 +502,7 @@ li a:active {
 
 .infoSquare{
     border: double 3px transparent;
-    background-image: linear-gradient(169.18deg, #01081a, rgb(4, 14, 37)), radial-gradient(circle at top, #D2EEFF -19.31%, #5CBDFF 8.35%, #528EFC 40.93%, #8B94F3 66.13%, #A08FCE 98.71%);
+    background-image: linear-gradient(169.18deg, #fff, #e4e8f3), radial-gradient(circle at top, #D2EEFF -19.31%, #5CBDFF 8.35%, #528EFC 40.93%, #8B94F3 66.13%, #A08FCE 98.71%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
     width: 100%;
@@ -507,7 +515,7 @@ li a:active {
 }
 
 .infoSquare p{
-    color: #FFF;
+    color: black;
     text-align: center;
     font-family: Montserrat;
     font-size: 16px;
@@ -523,7 +531,6 @@ li a:active {
     align-items: center;
     justify-content: center;
     border-radius: 25px;
-    background-color: #01081a;
     filter: drop-shadow(10px 5px 4px rgba(43, 97, 209, 0.02));
     margin-bottom: 25px;
 }
@@ -536,7 +543,6 @@ li a:active {
     padding-top: 5%;
     width: 100%;
     height: 1500px;
-    background-color: #071125;
     background-image: url(img/benchmark.png);
     background-position: top;
     background-repeat: no-repeat;
@@ -547,7 +553,7 @@ li a:active {
     width: 80%;
     margin-left: 10%;
     border: double 1px transparent;
-    background-image: linear-gradient(169.18deg, #01081a, rgb(4, 14, 37)), radial-gradient(circle at top, #D2EEFF -19.31%, #5CBDFF 8.35%, #528EFC 40.93%, #8B94F3 66.13%, #A08FCE 98.71%);
+    background-image: linear-gradient(169.18deg, #fff, #e4e8f3), radial-gradient(circle at top, #D2EEFF -19.31%, #5CBDFF 8.35%, #528EFC 40.93%, #8B94F3 66.13%, #A08FCE 98.71%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
     border-radius: 25px;
@@ -566,7 +572,7 @@ li a:active {
 }
 
 .tableTop .greyBtn{
-    color: #FFF;
+    color: black;
     font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
@@ -590,7 +596,7 @@ li a:active {
   }
   
 .tableBottom table th {
-    color: #FFF;
+    color: black;
     text-align: center;
     font-family: Montserrat;
     font-size: 12px;
@@ -604,10 +610,16 @@ li a:active {
     align-self: stretch;
   }
 
+  .tableBottom table th svg {
+    border: double 1px transparent;
+    border-radius: 15px;
+    background-color: lightgrey;    background-origin: border-box;
+  }
+
   .tableBottom td{
     padding-top: 10px;
     padding-left: 50px;
-    color: #FFF;
+    color: black;
     font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
@@ -667,12 +679,14 @@ li a:active {
     margin-top: 50px;
     width: 80%;
     margin-left: 10%;
+    background-color: lightgray;
+    border-radius: 18px;
+    overflow: hidden;
 }
 
 .perks{
     width: 100%;
     height: 1200px;
-    background-color: #071125;
 }
 
 .daPerks{
@@ -714,7 +728,7 @@ li a:active {
 
 .gridBox{
     border: double 1px transparent;
-    background-image: linear-gradient(169.18deg, #01081a, rgb(4, 14, 37)), radial-gradient(circle at top, #D2EEFF -19.31%, #5CBDFF 8.35%, #528EFC 40.93%, #8B94F3 66.13%, #A08FCE 98.71%);
+    background-image: linear-gradient(169.18deg, #fff, #e4e8f3), radial-gradient(circle at top, #D2EEFF -19.31%, #5CBDFF 8.35%, #528EFC 40.93%, #8B94F3 66.13%, #A08FCE 98.71%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
     border-radius: 25px;
@@ -745,7 +759,7 @@ li a:active {
 }
 
 .gridBox  h2{
-    color: #FFF;
+    color: black;
     text-align: center;
     font-family: Montserrat;
     font-size: 22px;
@@ -756,7 +770,7 @@ li a:active {
 }
 
 .gridBox p{
-    color: rgba(255, 255, 255, 0.70);
+    color: rgba(0, 0, 0, 0.7);
     text-align: center;
     font-family: Montserrat;
     font-size: 16px;
@@ -769,7 +783,6 @@ li a:active {
 .papers{
     width: 100%;
     height: 1000px;
-    background-color: #071125;
 }
 
 .papersCont{
@@ -841,12 +854,11 @@ li a:active {
 .FAQ{
     width: 100%;
     height: 600px;
-    background-color: #071125;
 }
 
 .FAQCONT{
     border: double 1px transparent;
-    background-image: linear-gradient(169.18deg, #01081a, rgb(4, 14, 37)), radial-gradient(circle at top, #D2EEFF -19.31%, #5CBDFF 8.35%, #528EFC 40.93%, #8B94F3 66.13%, #A08FCE 98.71%);
+    background-image: linear-gradient(169.18deg, #fff, #e4e8f3), radial-gradient(circle at top, #D2EEFF -19.31%, #5CBDFF 8.35%, #528EFC 40.93%, #8B94F3 66.13%, #A08FCE 98.71%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
     border-radius: 25px;
@@ -880,7 +892,7 @@ li a:active {
 }
 
 .FAQCONT div p{
-    color: #FFF;
+    color: black;
     font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
@@ -900,7 +912,7 @@ li a:active {
 }
 
 .update{
-    color: rgba(255, 255, 255, 0.70);
+    color: rgba(0, 0, 0, 0.7);
     font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
@@ -951,7 +963,6 @@ li a:active {
 .email{
     width: 100%;
     height: 450px;
-    background-color: #071125;
 }
 
 .sectionTitleEmail{
@@ -982,7 +993,6 @@ li a:active {
 .emailInput{
     border-radius: 6px 0px 0px 6px;
     border: 1px solid #DAE0E6;
-    background: rgba(43, 97, 209, 0.02);
     color: var(--gray-25, #919BA7);
     font-family: Inter;
     font-size: 15px;
@@ -1020,7 +1030,7 @@ li a:active {
 }
 
 .guarantee p{
-    color: #FFF;
+    color: black;
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
@@ -1146,7 +1156,7 @@ footer{
     line-height: 125%;
     /* 65px */
     letter-spacing: -1.04px;
-    color: white;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 .titleTextGradiant {
@@ -1166,8 +1176,7 @@ footer{
 
 
 .subtext {
-    color: white;
-    font-family: Montserrat;
+    color: rgba(48, 59, 82, 0.70);    font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -1178,8 +1187,7 @@ footer{
 }
 
 .subtext5{
-    color: #fff;
-    font-family: Montserrat;
+    color: rgba(48, 59, 82, 0.70);    font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -1196,7 +1204,7 @@ footer{
 
 .subText4 {
     margin-top: 20px;
-    color: #F4F6FF;
+    color: rgba(48, 59, 82, 0.70);
     text-align: center;
     font-family: Montserrat;
     font-size: 18px;
@@ -1213,8 +1221,7 @@ footer{
 
 .subTitle {
     padding-left: 3.5px;
-    color: #FFF;
-    font-family: Montserrat;
+    color: black;    font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
@@ -1257,10 +1264,10 @@ footer{
     padding: 10px 70px;
     border-radius: 25px;
     border: double 1.5px transparent;
-    color: white;
-    font-size: 20px;
+    color: rgba(48, 59, 82, 0.70);
+        font-size: 20px;
     margin-right: 30px;
-    background-image: linear-gradient(169.18deg, #030f2a, #09142d), radial-gradient(circle at top, #D2EEFF -19.31%, #5CBDFF 8.35%, #528EFC 40.93%, #8B94F3 66.13%, #A08FCE 98.71%);
+    background-image: linear-gradient(169.18deg, #fff, #e4e8f3), radial-gradient(circle at top, #D2EEFF -19.31%, #5CBDFF 8.35%, #528EFC 40.93%, #8B94F3 66.13%, #A08FCE 98.71%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
 }
@@ -1270,9 +1277,9 @@ footer{
     padding: 10px 30px;
     border-radius: 25px;
     border: double 1.5px transparent;
-    color: white;
+    color: rgba(48, 59, 82, 0.70);
     font-size: 20px;
-    background-image: linear-gradient(169.18deg, #030f2a, #09142d), radial-gradient(circle at top, #D2EEFF -19.31%, #5CBDFF 8.35%, #528EFC 40.93%, #8B94F3 66.13%, #A08FCE 98.71%);
+    background-image: linear-gradient(169.18deg, #fff, #e4e8f3), radial-gradient(circle at top, #D2EEFF -19.31%, #5CBDFF 8.35%, #528EFC 40.93%, #8B94F3 66.13%, #A08FCE 98.71%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
 }
@@ -1282,7 +1289,7 @@ footer{
     text-decoration: none;
     padding: 10px 70px;
     border-radius: 25px;
-    color: white;
+    color: rgba(48, 59, 82, 0.70);
     font-size: 20px;
     margin-right: 20px;
 }

@@ -1,0 +1,329 @@
+@media only screen and (max-width: 1000px) {
+    .spacer {
+      text-align: center;
+    }
+    .headerleft{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .headerList{
+        align-self: center;
+    }
+    .rectangle{
+        align-self: center;
+    }
+    .partnersCont{
+        width: 85%;
+        margin-left: 7.5%;
+    }
+    .partnersCont svg{
+        width: 15%;
+    }
+    .sectionTitleTextGrad{
+        font-size: 40px;
+    }
+    .subText4{
+        font-size: 15px;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .grid1{
+        grid-template-areas: 
+        'one'
+        'two'
+        'two'
+        'three'
+        ;
+        height: 1200px;
+    }
+    .service{
+        height: 3000px;
+    }
+    .cardCont{
+        flex-direction: column;
+        height: 1000px;
+    }
+    .card{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .card img{
+        width: 35%;
+        align-self: flex-end;
+        margin: 0%;
+    }
+    .card svg{
+        margin-top: -190px;
+        width: 47%;
+        transform: scaleX(-1);
+        align-self:flex-start;
+    }
+    .card h3{
+        align-self: flex-start;
+        margin-left: 5%;
+    }
+    .card a{
+        align-self: flex-start;
+        margin-left: 5%;
+        margin-bottom: 2%;
+    }
+    .tableCont{
+        overflow-x: scroll;
+        height: auto;
+    }
+    .table1{
+        width: 120%;
+        margin: 5%;
+    }
+    .partnersCont img{
+        width: 10%;
+    }
+    .gridCont{
+        justify-content: center;
+        grid-template-areas: 
+        'img'
+        'info'
+        'info'
+        'info'
+        ;
+    }
+    .imgCont{
+        text-align: center;
+        margin-right: -80px;
+    }
+    .infoCont{
+        flex-direction: column;
+        gap: 2%;
+    }
+    .infoSquare{
+        height: 100%;
+        padding: 5%;
+    }
+    .metrics{
+        height: 1400px;
+    }
+    .tableBottom{
+        overflow-x: scroll;
+    }
+    .tableBottom table{
+        width: 1500px;
+        margin-right: 5%;
+    }
+    .benchmark{
+        height: 1200px;
+    }
+    .daPerks{
+        grid-template-areas: 
+        'one'
+        'two'
+        'three'
+        'four'
+        'five'
+        'six'
+        ;
+    }
+    .perks{
+        height: 2800px;
+    }
+    .two{
+        margin-top: 0;
+    }
+    .five{
+        margin-top: 0;
+    }
+    .papersCont{
+        grid-template-areas: 
+        'text'
+        'btns'
+        'btns'
+        'btns'
+        ;
+    }
+    .sectionHeader2 .sectionTitleTextGrad{
+        text-align: center;
+    }
+    .sectionHeader2 .subText4{
+        text-align: center;
+    }
+    .dapapers{
+        flex-direction: column;
+    }
+    .papers{
+        height: 1600px;
+    }
+    .dapapers div{
+        height: 600px;
+        width: 50%;
+        margin-left: 25%;
+        background-size: contain;
+    }
+    .dapapers .div2{
+        background-size: contain;
+        height: 600px;
+        width: 50%;
+        margin-left: 25%;
+    }
+    .FAQCONT div p{
+        max-width: 50%;
+    }
+    .emailInput{
+        width:40%;
+    }
+    .emailSubmit{
+        width: 15%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .partnersCont{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .partners .partnersCont svg, .partners .partnersCont img{
+        width: 18%;
+    }
+    .sectionTitleTextGrad{
+        font-size: 35px;
+    }
+    .subText4{
+        font-size: 13px;
+    }
+    .sectionTitleText{
+        font-size: 35px;
+    }
+    .subtext{
+        font-size: 13px;
+    }
+    .card h3{
+        font-size: 25px;
+    }
+    .table1{
+        width: 1000px;
+    }
+    .offers{
+        height: 760px;
+    }
+    .ecosystem{
+        height: 300px;
+    }
+    .benchmark{
+        height: 1000px;
+    }
+    .perks{
+        height: 2700px;
+    }
+    .dapapers{
+        gap: 10px;
+    }
+    .dapapers div{
+        height: 450px;
+    }
+    .dapapers .div2{
+        height: 450px;
+    }
+    .papers{
+        height: 1300px;
+    }
+    .FAQCONT{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .guarantee{
+        width: 60%;
+        margin-left: 20%;
+    }
+    footer{
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .sectionTitleTextGrad{
+        font-size: 30px;
+    }
+    .sectionTitleText{
+        font-size: 30px;
+    }
+    .subtext{
+        font-weight: 500;
+    }
+    .card svg{
+        margin-top: -150px;
+        width: 60%;
+    }
+    .benchmark{
+        background-size: 200%;
+    }
+    .tableTop .greyBtn{
+        font-size: 12px;
+    }
+    .btn2{
+        font-size: 16px;
+    }
+    .dapapers div{
+        width: 70%;
+        margin-left: 15%;
+        height: 500px;
+    }
+    .dapapers .div2{
+        width: 70%;
+        margin-left: 15%;
+        height: 500px;
+    }
+    .FAQCONT div p{
+        font-size: 13px;
+    }
+    .emailInput{
+        width: 60%;
+    }
+    .emailSubmit{
+        width: 20%;
+    }
+    .footerTop{
+        flex-direction: column;
+    }
+    .footerBottom{
+        flex-direction: column;
+    }
+    .imgCont{
+        margin-right: 0px;
+    }
+}
+
+
+
+
+
+
+
+    nav ul .icon {
+    display: none;
+    padding: 0;
+}
+  
+  @media screen and (max-width: 650px) {
+    nav ul li:not(:first-child) {display: none;}
+    nav ul li a.icon {
+      display: block;
+    }
+    nav ul li[name="buttons"]{
+        display: flex;
+    }
+    nav ul li[name="buttons"] a:not(:last-child) {display: none;}
+  }
+  
+  @media screen and (max-width: 650px) {
+    nav ul.responsive {
+        flex-direction: column;
+        height: 500px;
+        padding-top: 5%;
+    }
+    nav ul.responsive li[name="buttons"] a:not(:last-child) {display: block;}
+
+    nav ul.responsive li {
+      display: block;
+    }
+  }
