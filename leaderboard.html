@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POUW | Flux</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobileStyles.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="leaderboardheader">
+        <nav>
+            <ul id="myNav" class="myNav">
+                <li name="logo">
+                    <a href="#">
+                        <img src="img/Flux_white-blue.svg" alt="">
+                    </a>
+                </li>
+
+                <li name="dropdownCont">
+                    <div>
+                        <a href="">Ecosystem</a>
+                        <a href="">Discover</a>
+                        <a class="alignTextCenter" href="">Explore <svg xmlns="http://www.w3.org/2000/svg" width="21"
+                                height="20" viewBox="0 0 21 20" fill="none">
+                                <path
+                                    d="M15.4502 8.33203L11.0395 12.7428C10.714 13.0682 10.1864 13.0682 9.86094 12.7428L5.4502 8.33203"
+                                    stroke="white" stroke-width="1.67" stroke-linecap="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </li>
+
+                <li name="buttons">
+                    <a href="">Sign Up</a>
+                    <a href="" class="gradientBtn">Log In</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <h2 class="fa fa-bars">&#9776;</h2>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header">
+            <div class="headerleft">
+                <div class="subTitle">Proof-of-Useful-Work</div>
+                <div class="rectangle"></div>
+                <div class="titleTextGradiant">Benchmark <br> Leaderboard</div>
+                <div class="headerList">
+                    <p class="subtext6">
+                        The Flux Cloud is a People-Powered Network to help you build decentralized applications with
+                        increased flexibility, scalability, and censorship resistance.
+                    </p>
+                </div>
+                <br></br>
+                <a class="btnBlue">Download Fluxcore</a>
+                <a class="btn">Learn More</a>
+            </div>
+        </div>
+
+        <div class="scores">
+            <div class="scoresGrid">
+                <div class="scoreone">
+                    <div>
+                        <img src="img/workers.png" alt="circle">
+                        <span>
+                            <h2>Total Workers</h2>
+                            <h1>15,157</h1>
+                        </span>
+                    </div>
+                </div>
+                <div class="scoretwo">
+                    <div>
+                        <img src="img/benchmarks.png" alt="circle">
+                        <span>
+                            <h2>Total Benchmarks</h2>
+                            <h1>125,000</h1>
+                        </span>
+                    </div>
+                </div>
+                <div class="scorethree">
+                    <div>
+                        <img src="img/aiscore.png" alt="circle">
+                        <span>
+                            <h2>Highscore <span> AI</span></h2>
+                            <h1>12,357<span>MLPerft</span></h1>
+                        </span>
+                    </div>
+                </div>
+                <div class="scorefour">
+                    <div>
+                        <img src="img/renderingscore.png" alt="circle">
+                        <span>
+                            <h2>Highscore <span> Rendering</span></h2>
+                            <h1>15,157<span>MLPerft</span></h1>
+                        </span>
+                    </div>
+                </div>
+                <div class="scorefive">
+                    <div>
+                        <img src="img/gamingscore.png" alt="circle">
+                        <span>
+                            <h2>Highscore <span> Gaming</span></h2>
+                            <h1>18,357<span>MLPerft</span></h1>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="leaderboards">
+        <div class="container">
+            <!-- text div -->
+            <div class="divOne">
+                <h1 class="LeaderboardtitleText">
+                    Join the Pursuit for Top Hardware Rankings in the <span class="blue">PoUW</span> Community!
+                </h1>
+                <p class="LeaderboardsubText">
+                    The Benchmark Leaderboard showcases Fluxcore client machines and benchmarks. Gain insights to
+                    improve your setup by studying top-performing configurations.
+                </p>
+            </div>
+            <!-- make this one flex to bottom right -->
+            <div class="divTwo">
+                <form>
+                    <input type="text" name="number" placeholder="Search for Machine ID">
+                    <input type="submit" id="submit" name="submit" value="🔍">
+                </form>
+            </div>
+            <!-- first three buttons -->
+            <div class="divThree">
+                <a class="greyBtn" href="">Benchmark:3D Unet <svg xmlns="http://www.w3.org/2000/svg" width="8"
+                        height="5" viewBox="0 0 8 5" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M6.92012 1.28025C7.02663 1.37789 7.02663 1.53618 6.92012 1.63381L4.19285 4.13381C4.08634 4.23144 3.91366 4.23144 3.80715 4.13381L1.07988 1.63381C0.973373 1.53618 0.973373 1.37789 1.07988 1.28025C1.18639 1.18262 1.35907 1.18262 1.46557 1.28025L4 3.60348L6.53443 1.28025C6.64093 1.18262 6.81361 1.18262 6.92012 1.28025Z"
+                            fill="white" stroke="white" stroke-width="0.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg></a>
+                <form>
+                    <input checked type="radio" id="radio1" name="radio" id="">
+                    <label for="radio1">Interruptible</label>
+                    <input type="radio" id="radio2" name="radio" id="">
+                    <label for="radio2">On-Demand</label>
+                </form>
+            </div>
+            <!-- last three buttons -->
+            <div class="divFour">
+                <a class="greyBtn" href="">GPU Model <svg xmlns="http://www.w3.org/2000/svg" width="8" height="5"
+                        viewBox="0 0 8 5" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M6.92012 1.28025C7.02663 1.37789 7.02663 1.53618 6.92012 1.63381L4.19285 4.13381C4.08634 4.23144 3.91366 4.23144 3.80715 4.13381L1.07988 1.63381C0.973373 1.53618 0.973373 1.37789 1.07988 1.28025C1.18639 1.18262 1.35907 1.18262 1.46557 1.28025L4 3.60348L6.53443 1.28025C6.64093 1.18262 6.81361 1.18262 6.92012 1.28025Z"
+                            fill="white" stroke="white" stroke-width="0.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg></a>
+                <a class="greyBtn" href="">All Regions <svg xmlns="http://www.w3.org/2000/svg" width="8" height="5"
+                        viewBox="0 0 8 5" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M6.92012 1.28025C7.02663 1.37789 7.02663 1.53618 6.92012 1.63381L4.19285 4.13381C4.08634 4.23144 3.91366 4.23144 3.80715 4.13381L1.07988 1.63381C0.973373 1.53618 0.973373 1.37789 1.07988 1.28025C1.18639 1.18262 1.35907 1.18262 1.46557 1.28025L4 3.60348L6.53443 1.28025C6.64093 1.18262 6.81361 1.18262 6.92012 1.28025Z"
+                            fill="white" stroke="white" stroke-width="0.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg></a>
+                <a class="greyBtn" href="">Advance Filter <svg xmlns="http://www.w3.org/2000/svg" width="8" height="5"
+                        viewBox="0 0 8 5" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M6.92012 1.28025C7.02663 1.37789 7.02663 1.53618 6.92012 1.63381L4.19285 4.13381C4.08634 4.23144 3.91366 4.23144 3.80715 4.13381L1.07988 1.63381C0.973373 1.53618 0.973373 1.37789 1.07988 1.28025C1.18639 1.18262 1.35907 1.18262 1.46557 1.28025L4 3.60348L6.53443 1.28025C6.64093 1.18262 6.81361 1.18262 6.92012 1.28025Z"
+                            fill="white" stroke="white" stroke-width="0.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg></a>
+            </div>
+        </div>
+        <div class="container2">
+            <table class="board1">
+                <tr>
+                    <th>Provider</th>
+                    <th>Motherboard</th>
+                    <th>CPU</th>
+                    <th>GPU</th>
+                    <th>VRAM</th>
+                    <th>Memory</th>
+                    <th>Disk</th>
+                    <th>Score</th>
+                    <th>Pricing</th>
+                    <th>Region</th>
+                </tr>
+                <tr>
+                    <td>
+                        Worker Name <br>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3.44466 4.58471L5.74066 2.32404V0.109375H6.33266C6.88172 0.109375 7.4083 0.327442 7.79661 0.715624C8.18491 1.1038 8.40315 1.63032 8.40333 2.17937V3.29471H12.1113V7.57804C12.1113 8.42284 11.7757 9.23305 11.1784 9.83041C10.581 10.4278 9.7708 10.7634 8.92599 10.7634H3.44466V4.58471ZM2.11133 4.55938H0.111328V10.7634H2.11133V4.55938Z"
+                                fill="#0ECB81" />
+                        </svg>
+                        <span>99.73%</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17" fill="none">
+                            <rect x="1.72266" y="2.5625" width="9.84615" height="11.0769" rx="4.92308" fill="white" />
+                            <path
+                                d="M7.03667 0.101562L13.0127 1.42956C13.345 1.50374 13.5821 1.79829 13.5821 2.13938V9.40265C13.5821 10.8616 12.8527 12.2245 11.6388 13.0332L7.03667 16.1016L2.43448 13.0332C1.21994 12.2237 0.491211 10.8616 0.491211 9.40338V2.13938C0.491211 1.79829 0.728302 1.50374 1.06067 1.42956L7.03667 0.101562ZM10.2745 5.35393L6.67448 8.9532L4.61776 6.89647L3.58939 7.92484L6.67521 11.0107L11.3036 6.38229L10.2745 5.35393Z"
+                                fill="#00B047" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17" fill="none">
+                            <rect x="1.81348" y="2.5625" width="9.84615" height="11.0769" rx="4.92308" fill="white" />
+                            <path
+                                d="M7.12749 0.101562L13.1035 1.42956C13.4358 1.50374 13.6729 1.79829 13.6729 2.13938V9.40265C13.6729 10.8616 12.9435 12.2245 11.7297 13.0332L7.12749 16.1016L2.5253 13.0332C1.31076 12.2237 0.582031 10.8616 0.582031 9.40338V2.13938C0.582031 1.79829 0.819122 1.50374 1.15149 1.42956L7.12749 0.101562ZM10.3653 5.35393L6.7653 8.9532L4.70858 6.89647L3.68021 7.92484L6.76603 11.0107L11.3944 6.38229L10.3653 5.35393Z"
+                                fill="#F19100" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17" fill="none">
+                            <rect x="1.9043" y="2.5625" width="9.84615" height="11.0769" rx="4.92308" fill="white" />
+                            <path
+                                d="M7.21831 0.101562L13.1943 1.42956C13.5267 1.50374 13.7638 1.79829 13.7638 2.13938V9.40265C13.7638 10.8616 13.0343 12.2245 11.8205 13.0332L7.21831 16.1016L2.61612 13.0332C1.40158 12.2237 0.672852 10.8616 0.672852 9.40338V2.13938C0.672852 1.79829 0.909942 1.50374 1.24231 1.42956L7.21831 0.101562ZM10.4561 5.35393L6.85612 8.9532L4.7994 6.89647L3.77103 7.92484L6.85685 11.0107L11.4852 6.38229L10.4561 5.35393Z"
+                                fill="#3F99E8" />
+                        </svg>
+                    </td>
+
+                    <td>
+                        x299 <br>
+                        <span>PCIE 3.0, 16x</span>
+                    </td>
+
+                    <td>
+                        2xIntel Xeon <br>
+                        <span>6/12 CORES</span>
+                    </td>
+
+                    <td>
+                        4x3090 <br>
+                        <span>88.4 TFLOPS</span>
+                    </td>
+
+                    <td>
+                        192 GB <br>
+                        <span>4x48 GB</span>
+                    </td>
+
+                    <td>
+                        12x64 GB <br>
+                        <span>768/768 GB </span>
+                    </td>
+
+                    <td>
+                        2xMixed(2TB)
+                    </td>
+
+                    <td>
+                        13600
+                        <span>3D Unet</span>
+                    </td>
+
+                    <td>
+                        $0.34 $ /hr <br>
+                        <span>103.2 Score/$/hr</span>
+                    </td>
+
+                    <td>
+                        Quebec, CA
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Worker Name <br>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3.44466 4.58471L5.74066 2.32404V0.109375H6.33266C6.88172 0.109375 7.4083 0.327442 7.79661 0.715624C8.18491 1.1038 8.40315 1.63032 8.40333 2.17937V3.29471H12.1113V7.57804C12.1113 8.42284 11.7757 9.23305 11.1784 9.83041C10.581 10.4278 9.7708 10.7634 8.92599 10.7634H3.44466V4.58471ZM2.11133 4.55938H0.111328V10.7634H2.11133V4.55938Z"
+                                fill="#0ECB81" />
+                        </svg>
+                        <span>99.73%</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17" fill="none">
+                            <rect x="1.72266" y="2.5625" width="9.84615" height="11.0769" rx="4.92308" fill="white" />
+                            <path
+                                d="M7.03667 0.101562L13.0127 1.42956C13.345 1.50374 13.5821 1.79829 13.5821 2.13938V9.40265C13.5821 10.8616 12.8527 12.2245 11.6388 13.0332L7.03667 16.1016L2.43448 13.0332C1.21994 12.2237 0.491211 10.8616 0.491211 9.40338V2.13938C0.491211 1.79829 0.728302 1.50374 1.06067 1.42956L7.03667 0.101562ZM10.2745 5.35393L6.67448 8.9532L4.61776 6.89647L3.58939 7.92484L6.67521 11.0107L11.3036 6.38229L10.2745 5.35393Z"
+                                fill="#00B047" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17" fill="none">
+                            <rect x="1.81348" y="2.5625" width="9.84615" height="11.0769" rx="4.92308" fill="white" />
+                            <path
+                                d="M7.12749 0.101562L13.1035 1.42956C13.4358 1.50374 13.6729 1.79829 13.6729 2.13938V9.40265C13.6729 10.8616 12.9435 12.2245 11.7297 13.0332L7.12749 16.1016L2.5253 13.0332C1.31076 12.2237 0.582031 10.8616 0.582031 9.40338V2.13938C0.582031 1.79829 0.819122 1.50374 1.15149 1.42956L7.12749 0.101562ZM10.3653 5.35393L6.7653 8.9532L4.70858 6.89647L3.68021 7.92484L6.76603 11.0107L11.3944 6.38229L10.3653 5.35393Z"
+                                fill="#F19100" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17" fill="none">
+                            <rect x="1.9043" y="2.5625" width="9.84615" height="11.0769" rx="4.92308" fill="white" />
+                            <path
+                                d="M7.21831 0.101562L13.1943 1.42956C13.5267 1.50374 13.7638 1.79829 13.7638 2.13938V9.40265C13.7638 10.8616 13.0343 12.2245 11.8205 13.0332L7.21831 16.1016L2.61612 13.0332C1.40158 12.2237 0.672852 10.8616 0.672852 9.40338V2.13938C0.672852 1.79829 0.909942 1.50374 1.24231 1.42956L7.21831 0.101562ZM10.4561 5.35393L6.85612 8.9532L4.7994 6.89647L3.77103 7.92484L6.85685 11.0107L11.4852 6.38229L10.4561 5.35393Z"
+                                fill="#3F99E8" />
+                        </svg>
+                    </td>
+
+                    <td>
+                        x299 <br>
+                        <span>PCIE 3.0, 16x</span>
+                    </td>
+
+                    <td>
+                        2xIntel Xeon <br>
+                        <span>6/12 CORES</span>
+                    </td>
+
+                    <td>
+                        4x3090 <br>
+                        <span>88.4 TFLOPS</span>
+                    </td>
+
+                    <td>
+                        192 GB <br>
+                        <span>4x48 GB</span>
+                    </td>
+
+                    <td>
+                        12x64 GB <br>
+                        <span>768/768 GB </span>
+                    </td>
+
+                    <td>
+                        2xMixed(2TB)
+                    </td>
+
+                    <td>
+                        13600
+                        <span>3D Unet</span>
+                    </td>
+
+                    <td>
+                        $0.34 $ /hr <br>
+                        <span>103.2 Score/$/hr</span>
+                    </td>
+
+                    <td>
+                        Quebec, CA
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Worker Name <br>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3.44466 4.58471L5.74066 2.32404V0.109375H6.33266C6.88172 0.109375 7.4083 0.327442 7.79661 0.715624C8.18491 1.1038 8.40315 1.63032 8.40333 2.17937V3.29471H12.1113V7.57804C12.1113 8.42284 11.7757 9.23305 11.1784 9.83041C10.581 10.4278 9.7708 10.7634 8.92599 10.7634H3.44466V4.58471ZM2.11133 4.55938H0.111328V10.7634H2.11133V4.55938Z"
+                                fill="#0ECB81" />
+                        </svg>
+                        <span>99.73%</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17" fill="none">
+                            <rect x="1.72266" y="2.5625" width="9.84615" height="11.0769" rx="4.92308" fill="white" />
+                            <path
+                                d="M7.03667 0.101562L13.0127 1.42956C13.345 1.50374 13.5821 1.79829 13.5821 2.13938V9.40265C13.5821 10.8616 12.8527 12.2245 11.6388 13.0332L7.03667 16.1016L2.43448 13.0332C1.21994 12.2237 0.491211 10.8616 0.491211 9.40338V2.13938C0.491211 1.79829 0.728302 1.50374 1.06067 1.42956L7.03667 0.101562ZM10.2745 5.35393L6.67448 8.9532L4.61776 6.89647L3.58939 7.92484L6.67521 11.0107L11.3036 6.38229L10.2745 5.35393Z"
+                                fill="#00B047" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17" fill="none">
+                            <rect x="1.81348" y="2.5625" width="9.84615" height="11.0769" rx="4.92308" fill="white" />
+                            <path
+                                d="M7.12749 0.101562L13.1035 1.42956C13.4358 1.50374 13.6729 1.79829 13.6729 2.13938V9.40265C13.6729 10.8616 12.9435 12.2245 11.7297 13.0332L7.12749 16.1016L2.5253 13.0332C1.31076 12.2237 0.582031 10.8616 0.582031 9.40338V2.13938C0.582031 1.79829 0.819122 1.50374 1.15149 1.42956L7.12749 0.101562ZM10.3653 5.35393L6.7653 8.9532L4.70858 6.89647L3.68021 7.92484L6.76603 11.0107L11.3944 6.38229L10.3653 5.35393Z"
+                                fill="#F19100" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17" fill="none">
+                            <rect x="1.9043" y="2.5625" width="9.84615" height="11.0769" rx="4.92308" fill="white" />
+                            <path
+                                d="M7.21831 0.101562L13.1943 1.42956C13.5267 1.50374 13.7638 1.79829 13.7638 2.13938V9.40265C13.7638 10.8616 13.0343 12.2245 11.8205 13.0332L7.21831 16.1016L2.61612 13.0332C1.40158 12.2237 0.672852 10.8616 0.672852 9.40338V2.13938C0.672852 1.79829 0.909942 1.50374 1.24231 1.42956L7.21831 0.101562ZM10.4561 5.35393L6.85612 8.9532L4.7994 6.89647L3.77103 7.92484L6.85685 11.0107L11.4852 6.38229L10.4561 5.35393Z"
+                                fill="#3F99E8" />
+                        </svg>
+                    </td>
+
+                    <td>
+                        x299 <br>
+                        <span>PCIE 3.0, 16x</span>
+                    </td>
+
+                    <td>
+                        2xIntel Xeon <br>
+                        <span>6/12 CORES</span>
+                    </td>
+
+                    <td>
+                        4x3090 <br>
+                        <span>88.4 TFLOPS</span>
+                    </td>
+
+                    <td>
+                        192 GB <br>
+                        <span>4x48 GB</span>
+                    </td>
+
+                    <td>
+                        12x64 GB <br>
+                        <span>768/768 GB </span>
+                    </td>
+
+                    <td>
+                        2xMixed(2TB)
+                    </td>
+
+                    <td>
+                        13600
+                        <span>3D Unet</span>
+                    </td>
+
+                    <td>
+                        $0.34 $ /hr <br>
+                        <span>103.2 Score/$/hr</span>
+                    </td>
+
+                    <td>
+                        Quebec, CA
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Worker Name <br>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3.44466 4.58471L5.74066 2.32404V0.109375H6.33266C6.88172 0.109375 7.4083 0.327442 7.79661 0.715624C8.18491 1.1038 8.40315 1.63032 8.40333 2.17937V3.29471H12.1113V7.57804C12.1113 8.42284 11.7757 9.23305 11.1784 9.83041C10.581 10.4278 9.7708 10.7634 8.92599 10.7634H3.44466V4.58471ZM2.11133 4.55938H0.111328V10.7634H2.11133V4.55938Z"
+                                fill="#0ECB81" />
+                        </svg>
+                        <span>99.73%</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17" fill="none">
+                            <rect x="1.72266" y="2.5625" width="9.84615" height="11.0769" rx="4.92308" fill="white" />
+                            <path
+                                d="M7.03667 0.101562L13.0127 1.42956C13.345 1.50374 13.5821 1.79829 13.5821 2.13938V9.40265C13.5821 10.8616 12.8527 12.2245 11.6388 13.0332L7.03667 16.1016L2.43448 13.0332C1.21994 12.2237 0.491211 10.8616 0.491211 9.40338V2.13938C0.491211 1.79829 0.728302 1.50374 1.06067 1.42956L7.03667 0.101562ZM10.2745 5.35393L6.67448 8.9532L4.61776 6.89647L3.58939 7.92484L6.67521 11.0107L11.3036 6.38229L10.2745 5.35393Z"
+                                fill="#00B047" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17" fill="none">
+                            <rect x="1.81348" y="2.5625" width="9.84615" height="11.0769" rx="4.92308" fill="white" />
+                            <path
+                                d="M7.12749 0.101562L13.1035 1.42956C13.4358 1.50374 13.6729 1.79829 13.6729 2.13938V9.40265C13.6729 10.8616 12.9435 12.2245 11.7297 13.0332L7.12749 16.1016L2.5253 13.0332C1.31076 12.2237 0.582031 10.8616 0.582031 9.40338V2.13938C0.582031 1.79829 0.819122 1.50374 1.15149 1.42956L7.12749 0.101562ZM10.3653 5.35393L6.7653 8.9532L4.70858 6.89647L3.68021 7.92484L6.76603 11.0107L11.3944 6.38229L10.3653 5.35393Z"
+                                fill="#F19100" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17" fill="none">
+                            <rect x="1.9043" y="2.5625" width="9.84615" height="11.0769" rx="4.92308" fill="white" />
+                            <path
+                                d="M7.21831 0.101562L13.1943 1.42956C13.5267 1.50374 13.7638 1.79829 13.7638 2.13938V9.40265C13.7638 10.8616 13.0343 12.2245 11.8205 13.0332L7.21831 16.1016L2.61612 13.0332C1.40158 12.2237 0.672852 10.8616 0.672852 9.40338V2.13938C0.672852 1.79829 0.909942 1.50374 1.24231 1.42956L7.21831 0.101562ZM10.4561 5.35393L6.85612 8.9532L4.7994 6.89647L3.77103 7.92484L6.85685 11.0107L11.4852 6.38229L10.4561 5.35393Z"
+                                fill="#3F99E8" />
+                        </svg>
+                    </td>
+
+                    <td>
+                        x299 <br>
+                        <span>PCIE 3.0, 16x</span>
+                    </td>
+
+                    <td>
+                        2xIntel Xeon <br>
+                        <span>6/12 CORES</span>
+                    </td>
+
+                    <td>
+                        4x3090 <br>
+                        <span>88.4 TFLOPS</span>
+                    </td>
+
+                    <td>
+                        192 GB <br>
+                        <span>4x48 GB</span>
+                    </td>
+
+                    <td>
+                        12x64 GB <br>
+                        <span>768/768 GB </span>
+                    </td>
+
+                    <td>
+                        2xMixed(2TB)
+                    </td>
+
+                    <td>
+                        13600
+                        <span>3D Unet</span>
+                    </td>
+
+                    <td>
+                        $0.34 $ /hr <br>
+                        <span>103.2 Score/$/hr</span>
+                    </td>
+
+                    <td>
+                        Quebec, CA
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Worker Name <br>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3.44466 4.58471L5.74066 2.32404V0.109375H6.33266C6.88172 0.109375 7.4083 0.327442 7.79661 0.715624C8.18491 1.1038 8.40315 1.63032 8.40333 2.17937V3.29471H12.1113V7.57804C12.1113 8.42284 11.7757 9.23305 11.1784 9.83041C10.581 10.4278 9.7708 10.7634 8.92599 10.7634H3.44466V4.58471ZM2.11133 4.55938H0.111328V10.7634H2.11133V4.55938Z"
+                                fill="#0ECB81" />
+                        </svg>
+                        <span>99.73%</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17" fill="none">
+                            <rect x="1.72266" y="2.5625" width="9.84615" height="11.0769" rx="4.92308" fill="white" />
+                            <path
+                                d="M7.03667 0.101562L13.0127 1.42956C13.345 1.50374 13.5821 1.79829 13.5821 2.13938V9.40265C13.5821 10.8616 12.8527 12.2245 11.6388 13.0332L7.03667 16.1016L2.43448 13.0332C1.21994 12.2237 0.491211 10.8616 0.491211 9.40338V2.13938C0.491211 1.79829 0.728302 1.50374 1.06067 1.42956L7.03667 0.101562ZM10.2745 5.35393L6.67448 8.9532L4.61776 6.89647L3.58939 7.92484L6.67521 11.0107L11.3036 6.38229L10.2745 5.35393Z"
+                                fill="#00B047" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17" fill="none">
+                            <rect x="1.81348" y="2.5625" width="9.84615" height="11.0769" rx="4.92308" fill="white" />
+                            <path
+                                d="M7.12749 0.101562L13.1035 1.42956C13.4358 1.50374 13.6729 1.79829 13.6729 2.13938V9.40265C13.6729 10.8616 12.9435 12.2245 11.7297 13.0332L7.12749 16.1016L2.5253 13.0332C1.31076 12.2237 0.582031 10.8616 0.582031 9.40338V2.13938C0.582031 1.79829 0.819122 1.50374 1.15149 1.42956L7.12749 0.101562ZM10.3653 5.35393L6.7653 8.9532L4.70858 6.89647L3.68021 7.92484L6.76603 11.0107L11.3944 6.38229L10.3653 5.35393Z"
+                                fill="#F19100" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17" fill="none">
+                            <rect x="1.9043" y="2.5625" width="9.84615" height="11.0769" rx="4.92308" fill="white" />
+                            <path
+                                d="M7.21831 0.101562L13.1943 1.42956C13.5267 1.50374 13.7638 1.79829 13.7638 2.13938V9.40265C13.7638 10.8616 13.0343 12.2245 11.8205 13.0332L7.21831 16.1016L2.61612 13.0332C1.40158 12.2237 0.672852 10.8616 0.672852 9.40338V2.13938C0.672852 1.79829 0.909942 1.50374 1.24231 1.42956L7.21831 0.101562ZM10.4561 5.35393L6.85612 8.9532L4.7994 6.89647L3.77103 7.92484L6.85685 11.0107L11.4852 6.38229L10.4561 5.35393Z"
+                                fill="#3F99E8" />
+                        </svg>
+                    </td>
+
+                    <td>
+                        x299 <br>
+                        <span>PCIE 3.0, 16x</span>
+                    </td>
+
+                    <td>
+                        2xIntel Xeon <br>
+                        <span>6/12 CORES</span>
+                    </td>
+
+                    <td>
+                        4x3090 <br>
+                        <span>88.4 TFLOPS</span>
+                    </td>
+
+                    <td>
+                        192 GB <br>
+                        <span>4x48 GB</span>
+                    </td>
+
+                    <td>
+                        12x64 GB <br>
+                        <span>768/768 GB </span>
+                    </td>
+
+                    <td>
+                        2xMixed(2TB)
+                    </td>
+
+                    <td>
+                        13600
+                        <span>3D Unet</span>
+                    </td>
+
+                    <td>
+                        $0.34 $ /hr <br>
+                        <span>103.2 Score/$/hr</span>
+                    </td>
+
+                    <td>
+                        Quebec, CA
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="container3">
+            <div class="systemItems">
+                <div class="systemInfo">
+                    <h1 class="title">System Information:</h1>
+                    <h1 class="info">Network Up/Down : <span class="blueArrow">&#129033;</span><span class="whiteText">
+                            776.89 / </span> <span class="redArrow">&#129035;</span><span class="whiteText"> 776.89 Kbps </span></h1>
+                    <h1 class="info">Latency: &#160; <span class="whiteText"> 9 ms</span></h1>
+                    <h1 class="info">Adapter: <span class="whiteText">Ethernet 4 Serial 00655389832234</span></h1>
+                    <h1 class="info">Type: &#160;<span class="whiteText">&#128435;&#160;Ethernet &#160;|&#160; </span> &#160;&#7140;&#160; Wi-Fi</h1>
+                </div>
+                <div class="systemInfo">
+                    <h1 class="title">System Information:</h1>
+                    <h1 class="title">System Information:</h1>
+                    <h1 class="title">System Information:</h1>
+                    <h1 class="title">System Information:</h1>
+                    <h1 class="title">System Information:</h1>
+                </div>
+                <div class="table">
+                    <table class="board1">
+                        <tr>
+                            <th>GPU</th>
+                            <th>Dedicated RAM</th>
+                            <th>TFLOPS</th>
+                            <th>RAM Bandwidth</th>
+                            <th>PCIE</th>
+                            <th>PCIe Bandwidth</th>
+                            <th>NVLink</th>
+                            <th>Max CUDA</th>
+                            <th>DirectX</th>
+                            <th>Driver Version</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+
+                            <td>
+                                Nvidia RTX A6000 D6
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
