@@ -1528,17 +1528,18 @@ footer {
 }
 
 .container2 {
-    height: 550px;
+    height: auto;
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
     background-color: #040912;
+    padding-bottom: 2%;
 }
 
 .container3 {
     margin-left: 10%;
     padding: 2%;
-    height: 1000px;
+    height: auto;
     width: 80%;
     border-radius: 21.512px;
     border: 0.86px solid var(--blue-line-20, rgba(46, 142, 255, 0.20));
@@ -1605,7 +1606,7 @@ footer {
     color: white;
 }
 
-.systemItems .table{
+.systemItems .table:first{
     padding: 2%;
     height: 100%;
     border-radius: 21px;
@@ -1629,10 +1630,17 @@ footer {
 
 .board1{
     width: 100%;
-    height: 500px;
+    height: 350px;
     border-collapse: collapse;
 }
 
+.board2{
+    height: 100px;
+}
+
+.board3{
+    height: 150px;
+}
 .board1 tr th{
     background: rgba(235, 238, 255, 0.10);
     height: 35.531px;
@@ -1704,6 +1712,153 @@ footer {
     line-height: 125%;
     /* 18.75px */
 }
+
+.numberSelector a{
+    color: #DCE1F0;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+
+.numberSelector .selected{
+    border: white solid 1.5px;
+    border-radius: 10px;
+    padding: 1.5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-weight: bold;
+    color:#2B61D1;
+}
+
+.numberSelector{
+    margin-top: 2%;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sliders{
+    background-color: #040912;
+    width: 100%;
+    height: 1000px;
+}
+
+.container4 {
+    margin-left: 17.5%;
+    padding: 2%;
+    height: auto;
+    width: 65%;
+    border-radius: 21.512px;
+    border: 0.86px solid var(--blue-line-20, rgba(46, 142, 255, 0.20));
+    background: var(--blue-background-2, rgba(43, 97, 209, 0.02));
+    display: grid;
+    grid-template-areas: 
+    'top top top'
+    'single tall1 tall2'
+    'single2 tall1 tall2';
+    row-gap: 30px;
+    column-gap: 15px;
+}
+
+.sliderBorders{
+    border-radius: 21.512px;
+    border: 0.86px solid var(--blue-line-20, rgba(46, 142, 255, 0.20));
+    background: var(--blue-background-2, rgba(43, 97, 209, 0.02));
+}
+
+.gridtop{
+    grid-area: top;
+    height: 100px;
+    padding: 1.5%;
+    padding-left: 3%;
+}
+
+.gridsingle{
+    grid-area: single;
+    height: 100px;
+}
+
+.gridsingle2{
+    grid-area: single2;
+    height: 100px;
+}
+
+.gridtall1{
+    grid-area: tall1;
+    height: 100%;
+}
+
+.gridtall2{
+    grid-area: tall2;
+    height: 100%;
+}
+
+.gridtop h1{
+    color: rgba(255, 255, 255, 0.87);
+    text-align: left;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.00);
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18.577px; /* 142.9% */
+}
+
+.gridtop div{
+    margin: 1.5%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.gridtop label{
+    margin-left: 1%;
+    color: rgba(255, 255, 255, 0.87);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.00);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
+    letter-spacing: 0.113px;
+}
+
+.gridtop div input{
+    appearance: none;
+    border: 2px solid #34495E;
+    border-radius: 4px;
+    outline: none;
+    background: var(--blue-background-2, rgba(43, 97, 209, 0.02));
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.gridtop div > input:checked {
+    border: 2px solid rgba(43, 97, 209, 0.02);
+    background-color: #34495E;
+}
+
+.gridtop div > input:checked + span::before {
+    content: '\2713';
+    display: block;
+    text-align: center;
+    background: var(--blue-background-2, rgba(43, 97, 209, 0.02));
+    position: absolute;
+    left: 0.7rem;
+    top: 0.2rem;
+}
+
+.gridtop div > input:active {
+    border: 2px solid #34495E;
+}
+
+
 
 .divOne {
     padding: 5%;
