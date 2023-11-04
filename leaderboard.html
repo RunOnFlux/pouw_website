@@ -557,10 +557,12 @@
                 <div class="systemInfo">
                     <h1 class="title">System Information:</h1>
                     <h1 class="info">Network Up/Down : <span class="blueArrow">&#129033;</span><span class="whiteText">
-                            776.89 / </span> <span class="redArrow">&#129035;</span><span class="whiteText"> 776.89 Kbps </span></h1>
+                            776.89 / </span> <span class="redArrow">&#129035;</span><span class="whiteText"> 776.89 Kbps
+                        </span></h1>
                     <h1 class="info">Latency: &#160; <span class="whiteText"> 9 ms</span></h1>
                     <h1 class="info">Adapter: <span class="whiteText">Ethernet 4 Serial 00655389832234</span></h1>
-                    <h1 class="info">Type: &#160;<span class="whiteText">&#128435;&#160;Ethernet &#160;|&#160; </span> &#160;&#7140;&#160; Wi-Fi</h1>
+                    <h1 class="info">Type: &#160;<span class="whiteText">&#128435;&#160;Ethernet &#160;|&#160; </span>
+                        &#160;&#7140;&#160; Wi-Fi</h1>
                 </div>
                 <div class="systemInfo flex2">
                     <h1 class="info_bottom">Motherboard: <br><span>ASUS WS C621E SAGE</span></h1>
@@ -1354,12 +1356,12 @@
             </table>
             <div class="numberSelector">
                 <a>< Previous</a>
-                <a class="selected">1</a>
-                <a>2</a>
-                <a>3</a>
-                <a>...</a>
-                <a>14</a>
-                <a>Next ></a>
+                        <a class="selected">1</a>
+                        <a>2</a>
+                        <a>3</a>
+                        <a>...</a>
+                        <a>14</a>
+                        <a>Next ></a>
             </div>
         </div>
     </section>
@@ -1369,13 +1371,164 @@
                 <h1>Machine Options</h1>
                 <div>
                     <input type="checkbox" name="cloud">
-                    <label for="cloud">Secure Cloud</label>
+                    <label for="cloud">Secure Cloud <span class="infoI">i</span>&#160;</label>
+                    <input type="checkbox" name="machine">
+                    <label for="machine">Unverified Machines&#160;</label>
+                    <input type="checkbox" name="machine2">
+                    <label for="machine2">Incompatible Machines&#160;</label>
+                    <input type="checkbox" name="offers">
+                    <label for="offers">Unavailable Offers&#160;</label>
+                    <input type="checkbox" name="inst">
+                    <label for="inst">Institutions&#160;</label>
                 </div>
             </div>
-            <div class="sliderBorders gridsingle"></div>
-            <div class="sliderBorders gridsingle2"></div>
-            <div class="sliderBorders gridtall1"></div>
-            <div class="sliderBorders gridtall2"></div>
+            <div class="sliderBorders gridsingle">
+                <h1>Price</h1>
+                <div class="sliderdiv">
+                    <h2 class="sliderTitle">$/Hour</h2>
+                    <div>
+                        <h2>0.00</h2>
+                        <h2>20.00</h2>
+                    </div>
+                    <input type="range" min="0.00" max="200.00" value="0" class="slider" id="range1">
+                </div>
+                <div class="sliderdiv">
+                    <h2 class="sliderTitle">Score/$/Hour</h2>
+                    <div>
+                        <h2>0.00</h2>
+                        <h2>20.00</h2>
+                    </div>
+                    <input type="range" min="0.00" max="200.00" value="0" class="slider" id="range1">
+                </div>
+            </div>
+
+            <div class="sliderBorders gridsingle2">
+                <h1>Availability</h1>
+                <div class="sliderdiv">
+                    <h2 class="sliderTitle">Host Reliability</h2>
+                    <div>
+                        <h2>90%</h2>
+                    </div>
+                    <input type="range" min="0" max="100" value="0" class="slider" id="range1">
+                </div>
+                <div class="sliderdiv">
+                    <h2 class="sliderTitle">Max Instance Duration</h2>
+                    <div>
+                        <h2>3 days</h2>
+                    </div>
+                    <input type="range" min="0.00" max="100.00" value="0" class="slider" id="range1">
+                </div>
+                <div class="sliderdiv">
+                    <h2 class="sliderTitle">Disk Space To Allocate</h2>
+                    <div>
+                        <h2>16.00 GB</h2>
+                    </div>
+                    <input type="range" min="0.00" max="100.00" value="0" class="slider" id="range1">
+                </div>
+            </div>
+
+            <div class="sliderBorders gridtall1">
+                <h1>GPU Resources</h1>
+                <div class="sliderdiv">
+                    <h2 class="sliderTitle">Gpu Count</h2>
+                    <div>
+                        <h2>0</h2>
+                        <h2>16</h2>
+                    </div>
+                    <input type="range" min="0" max="16" value="0" class="slider" id="range1">
+                </div>
+                <div class="sliderdiv">
+                    <h2 class="sliderTitle">TFLOPs (total)</h2>
+                    <div>
+                        <h2>1.00</h2>
+                    </div>
+                    <input type="range" min="0.00" max="100.00" value="0" class="slider" id="range1">
+                </div>
+                <div class="sliderdiv">
+                    <h2 class="sliderTitle">GPU RAM</h2>
+                    <div>
+                        <h2>1.00 GB</h2>
+                        <h2>512.00 GB</h2>
+                    </div>
+                    <input type="range" min="0.00" max="512.00" value="0" class="slider" id="range1">
+                </div>
+                <div class="sliderdiv">
+                    <h2 class="sliderTitle">GPU RAM Bandwith</h2>
+                    <div>
+                        <h2>10.00 GB/s</h2>
+                        <h2>2.00 TB/s</h2>
+                    </div>
+                    <input type="range" min="0" max="100" value="0" class="slider" id="range1">
+                </div>
+                <div class="sliderdiv">
+                    <h2 class="sliderTitle">PCIE Bandwidth</h2>
+                    <div>
+                        <h2>1.00 MB/s</h2>
+                        <h2>512.00 GB/s</h2>
+                    </div>
+                    <input type="range" min="0.00" max="512.00" value="0" class="slider" id="range1">
+                </div>
+                <div class="sliderdiv">
+                    <h2 class="sliderTitle">NVLink Bandwidth</h2>
+                    <div>
+                        <h2>1.00 MB/s</h2>
+                        <h2>2.00 TB/s</h2>
+                    </div>
+                    <input type="range" min="0.00" max="100.00" value="0" class="slider" id="range1">
+                </div>
+            </div>
+
+            <div class="sliderBorders gridtall2">
+                <h1>Machine Resources</h1>
+                <div class="sliderdiv">
+                    <h2 class="sliderTitle">Gpu Cores</h2>
+                    <div>
+                        <h2>1</h2>
+                        <h2>512</h2>
+                    </div>
+                    <input type="range" min="1" max="512" value="0" class="slider" id="range1">
+                </div>
+                <div class="sliderdiv">
+                    <h2 class="sliderTitle">Ram</h2>
+                    <div>
+                        <h2>3.00 GB</h2>
+                        <h2>10.00 TB</h2>
+                    </div>
+                    <input type="range" min="0.00" max="100.00" value="0" class="slider" id="range1">
+                </div>
+                <div class="sliderdiv">
+                    <h2 class="sliderTitle">Disk Bandwidth</h2>
+                    <div>
+                        <h2>40.00 MB/s</h2>
+                        <h2>128.00 GB/s</h2>
+                    </div>
+                    <input type="range" min="0.00" max="512.00" value="0" class="slider" id="range1">
+                </div>
+                <div class="sliderdiv">
+                    <h2 class="sliderTitle">Network Up</h2>
+                    <div>
+                        <h2>2 Mbps</h2>
+                        <h2>8 Gbps</h2>
+                    </div>
+                    <input type="range" min="0" max="100" value="0" class="slider" id="range1">
+                </div>
+                <div class="sliderdiv">
+                    <h2 class="sliderTitle">Network Down</h2>
+                    <div>
+                        <h2>8 Mbps</h2>
+                        <h2>8 Gbps</h2>
+                    </div>
+                    <input type="range" min="0.00" max="512.00" value="0" class="slider" id="range1">
+                </div>
+                <div class="sliderdiv">
+                    <h2 class="sliderTitle"># Open TCP/UDP Ports</h2>
+                    <div>
+                        <h2>0</h2>
+                        <h2>65536</h2>
+                    </div>
+                    <input type="range" min="0.00" max="100.00" value="0" class="slider" id="range1">
+                </div>
+            </div>
         </div>
     </section>
 </body>

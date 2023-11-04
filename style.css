@@ -1780,12 +1780,12 @@ footer {
 
 .gridsingle{
     grid-area: single;
-    height: 100px;
+    height: 280px;
 }
 
 .gridsingle2{
     grid-area: single2;
-    height: 100px;
+    height: 400px;
 }
 
 .gridtall1{
@@ -1798,12 +1798,12 @@ footer {
     height: 100%;
 }
 
-.gridtop h1{
+.sliderBorders h1{
     color: rgba(255, 255, 255, 0.87);
     text-align: left;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.00);
     font-family: Montserrat;
-    font-size: 13px;
+    font-size: 17px;
     font-style: normal;
     font-weight: 600;
     line-height: 18.577px; /* 142.9% */
@@ -1813,8 +1813,130 @@ footer {
     margin: 1.5%;
     display: flex;
     align-items: center;
-    
+    justify-content: space-around;
 }
+
+.gridsingle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.gridsingle2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.gridtall1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.gridtall2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.gridsingle2 .sliderdiv{
+    text-align: left;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+.gridtall1 .sliderdiv{
+    text-align: left;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+.gridtall2 .sliderdiv{
+    text-align: left;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+.gridsingle .sliderdiv{
+    text-align: left;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.sliderdiv div{
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sliderdiv div h2{
+    color: rgba(255, 255, 255, 0.80);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.00);
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15.719px; /* 142.9% */
+}
+
+.sliderTitle{
+    color: rgba(255, 255, 255, 0.87);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.00);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 17.148px; /* 142.9% */
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 13px;
+    border-radius: 5px;
+    background: #2B61D1;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+  }
 
 .gridtop label{
     margin-left: 1%;
@@ -1826,6 +1948,14 @@ footer {
     font-weight: 500;
     line-height: 18px; /* 150% */
     letter-spacing: 0.113px;
+}
+
+.infoI{
+    background-color:#6670854D;
+    border-radius: 50%;
+    padding: 1px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 .gridtop div input{
