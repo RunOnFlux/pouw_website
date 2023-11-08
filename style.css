@@ -1596,10 +1596,10 @@ footer {
 }
 
 .blueArrow{
-    color: #2B61D1;
+    color: #2B61D1 !important; 
 }
 .redArrow{
-    color: #F00;
+    color: #F00 !important;
 }
 
 .whiteText{

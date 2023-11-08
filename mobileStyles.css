@@ -1,3 +1,186 @@
+@media only screen and (max-width: 1500px) {
+    .container .greyBtn{
+        width: 230px;
+    }
+    .container4{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .scoreone{
+        flex: none;
+    }
+    .scoretwo{
+        flex: none;
+    }
+    .scoresGrid{
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .container .greyBtn{
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .container .greyBtn{
+        width: 150px;
+    }
+    .systemInfo{
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .container2{
+        overflow-x: scroll !important;
+    }
+    .board1{
+        width: 1300px;
+    }
+
+    .table{
+        overflow-x: scroll !important;
+    }
+    .scoresGrid{
+        gap: 10px;
+    }
+    .scoresGrid div div{
+        width: 300px;
+    }
+    .scoresGrid div div h1{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+.container3{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.systemInfo{
+    justify-content: space-evenly;
+}
+.container{
+    grid-template-areas: 
+    'one one'
+    'two two'
+    'three three'
+    'four four';
+    height: 450px;
+}
+.divTwo{
+    padding: 0;
+    justify-content: center;
+}
+.divThree{
+    justify-content: center;
+    padding: 0;
+}
+.divFour{
+    padding: 0;
+    justify-content: center;
+}
+.container4{
+    width: 95%;
+    margin-left: 2.5%;
+}
+.leaderboardheader{
+    height: 1400px;
+}
+.leaderboardheader .subTitle{
+    text-align: center;
+}
+.titleTextGradiant{
+    text-align: center;
+}
+.headerList{
+    text-align: center;
+}
+.subtext6{
+    width: 60%;
+    margin-left: 20%;
+}
+.gridtop div{
+    flex-wrap: wrap;
+    margin: 5%;
+    margin-top: 1.5%;
+    margin-bottom: 0;
+    justify-content: center;
+    gap: 10px;
+}
+}
+@media only screen and (max-width: 900px) {
+    .scoresGrid{
+        padding-top: 5%;
+    }
+    .systemInfo{
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .scoresGrid div div{
+        height: 120px;
+    }
+    .scoresGrid div div h1{
+        font-size: 18px;
+    }
+    .scoresGrid div div h2{
+        font-size: 14px;
+    }
+    .numberSelector{
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .gridtop{
+        height: 130px;
+    }
+    .container4{
+        grid-template-areas: 
+        'top'
+        'single'
+        'single2'
+        'tall1'
+        'tall2';
+    }
+    .sliders{
+        height: 2300px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .gridtop div{
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .leaderboardheader{
+        height: 1600px;
+    }
+    .scores{
+        height: 750px;
+    }
+    .leaderboardheader .titleTextGradiant{
+        font-size: 70px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .divFour{
+        flex-wrap: wrap;
+    }
+}
+
+
+
 @media only screen and (max-width: 1000px) {
     .spacer {
       text-align: center;
