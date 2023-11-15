@@ -43,11 +43,19 @@ nav ul {
 }
 
 nav {
-    height: 115px;
+    height: 90px;
 }
 
 .center {
     display: inline;
+}
+
+.btnFluxcore{
+    border-radius: 8px !important;
+    background: linear-gradient(92deg, rgba(210, 238, 255, 0.25) -19.31%, rgba(92, 189, 255, 0.25) 8.35%, rgba(82, 142, 252, 0.25) 40.93%, rgba(139, 148, 243, 0.25) 66.13%, rgba(160, 143, 206, 0.25) 98.71%) !important;
+    backdrop-filter: blur(2px) !important;
+    padding: 15px 30px !important;
+    border: none !important;
 }
 
 .alignTextCenter {
@@ -55,6 +63,46 @@ nav {
     align-items: center;
     align-self: stretch;
     gap: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 209px;
+    padding: 4px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.00);
+    background: rgba(217, 217, 217, 0.01);
+    backdrop-filter: blur(15px);
+  }
+  
+  .dropdown-content a {
+    display: flex;
+    padding: 12px 18px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 21px */
+    background: var(--Linear-Nice, linear-gradient(92deg, #D2EEFF -19.31%, #5CBDFF 8.35%, #528EFC 40.93%, #8B94F3 66.13%, #A08FCE 98.71%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+    
+  .show {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
 }
 
 li {
@@ -90,6 +138,9 @@ li[name="buttons"] a {
     align-items: center;
     gap: 2px;
 }
+
+
+
 
 .gradientBtn {
     border-radius: 100px;
