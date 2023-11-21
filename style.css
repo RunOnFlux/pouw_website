@@ -56,6 +56,37 @@ nav {
     backdrop-filter: blur(2px) !important;
     padding: 15px 30px !important;
     border: none !important;
+    width: 23% !important;
+    display: block !important;
+    text-align: center;
+}
+
+.btnFluxcore span{
+    background: var(--Linear, linear-gradient(92deg, #D2EEFF -19.31%, #5CBDFF 8.35%, #528EFC 40.93%, #8B94F3 66.13%, #A08FCE 98.71%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Montserrat;
+    font-weight: 600;
+}
+
+.btnFluxcore2{
+    border-radius: 8px !important;
+    background: linear-gradient(92deg, rgba(210, 238, 255, 0.25) -19.31%, rgba(92, 189, 255, 0.25) 8.35%, rgba(82, 142, 252, 0.25) 40.93%, rgba(139, 148, 243, 0.25) 66.13%, rgba(160, 143, 206, 0.25) 98.71%) !important;
+    backdrop-filter: blur(2px) !important;
+    padding: 15px 30px !important;
+    border: none !important;
+    width: 23% !important;
+    text-align: center;
+}
+
+.btnFluxcore2 span{
+    background: var(--Linear, linear-gradient(92deg, #D2EEFF -19.31%, #5CBDFF 8.35%, #528EFC 40.93%, #8B94F3 66.13%, #A08FCE 98.71%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Montserrat;
+    font-weight: 600;
 }
 
 .alignTextCenter {
@@ -68,8 +99,9 @@ nav {
 .dropdown-content {
     display: none;
     position: absolute;
-    z-index: 1;
-    width: 209px;
+    width: 17.5%;
+    margin-left: 2px;
+    align-content: center;
     padding: 4px;
     flex-direction: column;
     align-items: flex-start;
@@ -79,6 +111,24 @@ nav {
     background: rgba(217, 217, 217, 0.01);
     backdrop-filter: blur(15px);
   }
+
+  .dropdown-content2 {
+    display: none;
+    position: absolute;
+    margin-top: 1%;
+    width: 14%;
+    margin-left: 2px;
+    align-content: center;
+    padding: 4px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.00);
+    background: rgba(217, 217, 217, 0.01);
+    backdrop-filter: blur(15px);
+  }
+  
   
   .dropdown-content a {
     display: flex;
@@ -92,12 +142,17 @@ nav {
     font-style: normal;
     font-weight: 500;
     line-height: 150%; /* 21px */
-    background: var(--Linear-Nice, linear-gradient(92deg, #D2EEFF -19.31%, #5CBDFF 8.35%, #528EFC 40.93%, #8B94F3 66.13%, #A08FCE 98.71%));
+    justify-content: left;
+    background: white;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
     
+  .dropdown-content a img{
+    width: 15%;
+    height: 15%;
+  }
   .show {
     display: flex;
     flex-direction: column;
@@ -1557,9 +1612,10 @@ footer {
 .scorethree,
 .scorefour,
 .scorefive {
-    flex: 25% 0;
+    flex: 30% 0;
     justify-content: center;
 }
+
 
 .leaderboards {
     background-color: #040912;
