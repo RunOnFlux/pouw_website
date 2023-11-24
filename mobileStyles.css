@@ -279,6 +279,7 @@
     }
     .infoCont{
         flex-direction: column;
+        flex-wrap: wrap;
         gap: 2%;
     }
     .infoSquare{
