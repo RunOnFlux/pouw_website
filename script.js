@@ -112,10 +112,10 @@ function show2(data) {
     <td>${r.Rank} </td>
     <td>${r.Computer.Name}</td>
     <td>${r.Computer.motherboard.model}</td> 
-    <td>${r.Computer.cpus.model} <br>
-    <span class="span2">${r.Computer.cpus.num_cores} CORES</span>
+    <td>${r.Computer.cpus[0].model} <br>
+    <span class="span2">${r.Computer.cpus[0].num_cores} CORES</span>
     </td> 
-    <td>${r.Computer.cpus.model}</td>
+    <td>${r.Computer.gpus[1].model}</td>
     <td>${r.Computer.TotalMemory}</td>
     <td>?</td>
     <td>${r.Score}</td></tr>`
