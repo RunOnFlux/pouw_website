@@ -115,7 +115,7 @@ function show2(data) {
     <td>${r.Computer.cpus[0].model} <br>
     <span class="span2">${r.Computer.cpus[0].num_cores} CORES</span>
     </td> 
-    <td>${r.Computer.gpus[1].model}</td>
+    <td>${r.Computer.gpus[0].model}</td>
     <td>${r.Computer.TotalMemory}</td>
     <td>?</td>
     <td>${r.Score}</td></tr>`
@@ -129,3 +129,61 @@ function show2(data) {
     document.getElementById("daTable").innerHTML = tab;
 }
 
+
+const api_url3 = 
+      "https://pouwdev.runonflux.io/api/getLeaderBoard";
+ 
+// Defining async function
+async function getapi3(url) {
+   
+    // Storing response
+    const response3 = await fetch(url);
+   
+    // Storing data in form of JSON
+    var data = await response3.json();
+    show3(data);
+}
+// Calling that async function
+getapi3(api_url3);
+
+
+
+function show3(data) {
+    let tab = 
+        `<tr>
+        <th>Rank</th>
+        <th>Machine </th>
+        <th>Motherboard</th>
+        <th>CPU</th>
+        <th>GPU</th>
+        <th>VRAM</th>
+        <th>Memory</th>
+        <th>Disk</th>
+        <th>Score</th>
+        <th>Region</th>
+    </tr>`;
+    
+    // Loop to access all rows 
+    for (let r of data) {
+        tab += `<tr> 
+    <td>${r.Rank} </td>
+    <td>${r.Computer.Name}</td>
+    <td>${r.Computer.motherboard.model}</td> 
+    <td>${r.Computer.cpus[0].model} <br>
+    <span class="span2">${r.Computer.cpus[0].num_cores} CORES</span>
+    </td> 
+    <td>${r.Computer.gpus[0].model}</td>
+    <td>${r.Computer.gpus[0].vram}</td>
+    <td>${r.Computer.TotalMemory}</td>
+    <td>?</td>
+    <td>${r.Score}</td>
+    <td>${r.Computer.geo_location.country_short}</td></tr>`
+    let numr = `${r.Rank}`;
+    if(numr == 10){
+      break;
+    };
+
+    }
+    // Setting innerHTML as tab variable
+    document.getElementById("leaderTable").innerHTML = tab;
+}
