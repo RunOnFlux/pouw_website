@@ -537,6 +537,10 @@ td[name="grad2"] {
     background-clip: padding-box, border-box;
 }
 
+.grad3{
+   background: radial-gradient(circle at top, #D2EEFF -19.31%, #5CBDFF 8.35%, #528EFC 40.93%, #8B94F3 66.13%, #A08FCE 98.71%) !important;
+}
+
 th[name="grad"] {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
