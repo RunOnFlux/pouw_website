@@ -278,7 +278,6 @@
         margin-right: -80px;
     }
     .infoCont{
-        flex-direction: column;
         flex-wrap: wrap;
         gap: 2%;
     }
