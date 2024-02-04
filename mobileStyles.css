@@ -179,6 +179,83 @@
     }
 }
 
+@media only screen and (max-width: 500px) {
+    .btnFluxcore2, .btnFluxcore{
+        width: 100% !important;
+        margin-right: 0px;
+    }
+    .btn{
+        margin-right: 0px;
+    }
+    .card img{
+        width: 80% !important;
+    }
+    .service{
+        height: 3100px !important;
+    }
+    .ecosystem{
+        height: 390px !important;
+    }
+    .infoSquare{
+        width: 100%;
+        height: 30% !important;
+    }
+    .infoCont{
+        padding-top: 0px;
+    }
+    .metrics{
+        height: 1800px !important;
+    }
+    .subText4{
+        width: 100% !important;
+        margin: 0 !important;
+        margin-bottom: 15% !important;
+    }
+    .tableTop{
+        flex-wrap: wrap;
+    }
+    .greyBtn{
+        margin-bottom: 5px;
+    }
+    .iconCont{
+        width: unset;
+        height: unset;
+    }
+
+    .transBtn{
+        width: 150px;
+        height: 50px;
+        padding: 0;
+    }
+    .leaderboardheader .titleTextGradiant{
+        font-size: 50px;
+    }
+    .headerleft{
+        width: 100% !important;
+        padding: 0;
+        margin: 0 !important;
+    }
+    .divOne{
+        padding: 0;
+        width: 70%;
+    }
+    .divTwo{
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    .divThree{
+        flex-wrap: wrap;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .container{
+        height: 600px;
+    }
+    .gridtop{
+        height: 200px;
+    }
+}
+
 
 
 @media only screen and (max-width: 1000px) {
