@@ -14,7 +14,7 @@ function dropdownFunction() {
 
 // api url
 const api_url = 
-      "https://pouwdev.runonflux.io/api/getLeaderBoardStats";
+      "https://service.fluxcore.ai/api/getLeaderBoardStats";
  
 // Defining async function
 async function getapi(url) {
@@ -43,7 +43,7 @@ function show(data){
 
 // api url
 const api_url2 = 
-      "https://pouwdev.runonflux.io/api/getLeaderBoard";
+      "https://service.fluxcore.ai/api/getLeaderBoard?limit=61&skip=0";
  
 // Defining async function
 async function getapi2(url) {
@@ -131,7 +131,7 @@ function show2(data) {
 
 
 const api_url3 = 
-      "https://pouwdev.runonflux.io/api/getLeaderBoard";
+      "https://service.fluxcore.ai/api/getLeaderBoard?limit=61&skip=0";
  
 // Defining async function
 async function getapi3(url) {
@@ -175,7 +175,7 @@ function show3(data) {
     <td>${r.Computer.gpus[0].model}</td>
     <td>${r.Computer.gpus[0].vram}</td>
     <td>${r.Computer.TotalMemory}</td>
-    <td>?</td>
+    <td>${r.Computer.storages.manufacturer[0]}</td>
     <td>${r.Score}</td>
     <td>${r.Computer.geo_location.country_short}</td></tr>`
     let numr = `${r.Rank}`;
