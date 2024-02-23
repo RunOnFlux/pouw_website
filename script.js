@@ -117,7 +117,7 @@ function show2(data) {
     </td> 
     <td>${r.Computer.gpus[0].model}</td>
     <td>${r.Computer.TotalMemory}</td>
-    <td>${r.Computer.storages.manufacturer[0]}</td>
+    <td>${r.Computer.storages[0].manufacturer}</td>
     <td>${r.Score}</td></tr>`
     let numr = `${r.Rank}`;
     if(numr == 5){
@@ -175,7 +175,7 @@ function show3(data) {
     <td>${r.Computer.gpus[0].model}</td>
     <td>${r.Computer.gpus[0].vram}</td>
     <td>${r.Computer.TotalMemory}</td>
-    <td>${r.Computer.storages.manufacturer[0]}</td>
+    <td>${r.Computer.storages[0].manufacturer}</td>
     <td>${r.Score}</td>
     <td>${r.Computer.geo_location.country_short}</td></tr>`
     let numr = `${r.Rank}`;
