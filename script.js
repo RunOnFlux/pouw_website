@@ -11,6 +11,69 @@ function dropdownFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
+function showFaq(number){
+    if(number == 1){
+        if(document.getElementById("faq1").classList.contains("show")){
+            document.getElementById("faq1").classList.remove("show");
+            document.getElementById("faq1").classList.add("hide");
+            document.getElementById("faqbtn1").classList.add("openFaq");
+            document.getElementById("faqbtn1").classList.remove("closeFaq");
+        }else{
+            document.getElementById("faq1").classList.add("show");
+            document.getElementById("faq1").classList.remove("hide");
+            document.getElementById("faqbtn1").classList.remove("openFaq");
+            document.getElementById("faqbtn1").classList.add("closeFaq");
+        }
+    }else if(number == 2){
+        if(document.getElementById("faq2").classList.contains("show")){
+            document.getElementById("faq2").classList.remove("show");
+            document.getElementById("faq2").classList.add("hide");
+            document.getElementById("faqbtn2").classList.add("openFaq");
+            document.getElementById("faqbtn2").classList.remove("closeFaq"); 
+        }else{
+            document.getElementById("faq2").classList.add("show");
+            document.getElementById("faq2").classList.remove("hide");
+            document.getElementById("faqbtn2").classList.remove("openFaq");
+            document.getElementById("faqbtn2").classList.add("closeFaq");
+        }
+    }else if(number == 3){
+        if(document.getElementById("faq3").classList.contains("show")){
+            document.getElementById("faq3").classList.remove("show");
+            document.getElementById("faq3").classList.add("hide");
+            document.getElementById("faqbtn3").classList.add("openFaq");
+            document.getElementById("faqbtn3").classList.remove("closeFaq");
+        }else{
+            document.getElementById("faq3").classList.add("show");
+            document.getElementById("faq3").classList.remove("hide");
+            document.getElementById("faqbtn3").classList.remove("openFaq");
+            document.getElementById("faqbtn3").classList.add("closeFaq");
+        }
+    }else if(number == 4){
+        if(document.getElementById("faq4").classList.contains("show")){
+            document.getElementById("faq4").classList.remove("show");
+            document.getElementById("faq4").classList.add("hide");
+            document.getElementById("faqbtn4").classList.add("openFaq");
+            document.getElementById("faqbtn4").classList.remove("closeFaq");
+        }else{
+            document.getElementById("faq4").classList.add("show");
+            document.getElementById("faq4").classList.remove("hide");
+            document.getElementById("faqbtn4").classList.remove("openFaq");
+            document.getElementById("faqbtn4").classList.add("closeFaq");
+        }
+    }else if(number == 5){
+        if(document.getElementById("faq5").classList.contains("show")){
+            document.getElementById("faq5").classList.remove("show");
+            document.getElementById("faq5").classList.add("hide");
+            document.getElementById("faqbtn5").classList.add("openFaq");
+            document.getElementById("faqbtn5").classList.remove("closeFaq");
+        }else{
+            document.getElementById("faq5").classList.add("show");
+            document.getElementById("faq5").classList.remove("hide");
+            document.getElementById("faqbtn5").classList.remove("openFaq");
+            document.getElementById("faqbtn5").classList.add("closeFaq");
+        }
+    }
+}
 
 // api url
 const api_url = 
@@ -128,6 +191,7 @@ function show2(data) {
     // Setting innerHTML as tab variable
     document.getElementById("daTable").innerHTML = tab;
 }
+
 
 
 const api_url3 = 

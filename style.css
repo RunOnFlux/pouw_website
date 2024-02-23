@@ -569,6 +569,19 @@ td[name="grad2"] {
     background-color: #071125;
 }
 
+.FAQCONT span{
+    color: var(--dark-to-white-70, rgba(255, 255, 255, 0.70));
+
+    /* Text md/Regular */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    width: 70%;
+}
+
+
 
 .metrics {
     width: 100%;
@@ -576,12 +589,20 @@ td[name="grad2"] {
     background-color: #071125;
 }
 
+.hide{
+    visibility: hidden;
+}
+
+.show{
+    visibility: visible;
+}
+
 .gridCont {
     display: grid;
     width: 80%;
     margin-left: 10%;
     grid-template-areas:
-        'img info info info'
+        'info info info'
     ;
 }
 
@@ -624,7 +645,7 @@ td[name="grad2"] {
     align-items: center;
     flex-wrap: wrap-reverse;
     justify-content: center;
-    gap: 2%;
+    gap: 5%;
 }
 
 .infoSquare {
@@ -996,6 +1017,30 @@ td[name="grad2"] {
     background-color: #071125;
 }
 
+.openFaq{
+    background: transparent;
+    background-image: url("img/openIcon.png");
+    width: 22px !important;
+    height: 23px !important;
+    background-position: center;
+    border: 0;
+    text-decoration: none;
+    outline: 0;
+    overflow: hidden;
+}
+.closeFaq{
+    background: transparent;
+    background-image: url("img/closeIcon.png");
+    width: 22px !important;
+    height: 23px !important;
+    background-position: center;
+    border: 0;
+    text-decoration: none;
+    outline: 0;
+    overflow: hidden;
+
+}
+
 .FAQCONT {
     border: double 1px transparent;
     background-image: linear-gradient(169.18deg, #01081a, rgb(4, 14, 37)), radial-gradient(circle at top, #D2EEFF -19.31%, #5CBDFF 8.35%, #528EFC 40.93%, #8B94F3 66.13%, #A08FCE 98.71%);
@@ -1004,7 +1049,7 @@ td[name="grad2"] {
     border-radius: 25px;
     width: 80%;
     margin-left: 10%;
-    height: auto;
+    height: 425px;
     display: grid;
     grid-template-areas:
         'row1'
@@ -1372,7 +1417,7 @@ footer {
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 40px;
+    line-height: 26px;
     /* 250% */
     letter-spacing: -0.32px;
     width: 75%;
