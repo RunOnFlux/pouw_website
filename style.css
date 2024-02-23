@@ -118,7 +118,7 @@ nav {
     display: none;
     position: absolute;
     margin-top: 1%;
-    width: 14%;
+    width: 18%;
     margin-left: 2px;
     align-content: center;
     padding: 4px;
@@ -299,8 +299,8 @@ li a:active {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 70%;
-    margin-left: 15%;
+    width: 80%;
+    margin-left: 10%;
     margin-top: 35px;
 
 }
