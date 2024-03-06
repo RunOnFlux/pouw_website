@@ -32,6 +32,13 @@
     .systemInfo{
         flex-wrap: wrap;
     }
+    .infoSquare{
+        width: 50% !important;
+        height: 20% !important;
+    }
+    .infoCont{
+        padding-top: 20px;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -152,6 +159,9 @@
     .sliders{
         height: 2300px;
     }
+    .infoSquare{
+        width: 80% !important;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -180,7 +190,7 @@
 }
 
 @media only screen and (max-width: 500px) {
-    .btnFluxcore2, .btnFluxcore{
+    .btnFluxcore2, .btnFluxcore, .btnExtra{
         width: 100% !important;
         margin-right: 0px;
     }
@@ -197,7 +207,7 @@
         height: 390px !important;
     }
     .infoSquare{
-        width: 100%;
+        width: 100% !important;
         height: 30% !important;
     }
     .infoCont{

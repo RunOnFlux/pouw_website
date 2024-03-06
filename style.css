@@ -285,7 +285,7 @@ li a:active {
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    background: var(--blue-branding, #2B61D1);
+    background: var(--Linear, linear-gradient(92deg, #D2EEFF -19.31%, #5CBDFF 8.35%, #528EFC 40.93%, #8B94F3 66.13%, #A08FCE 98.71%));
 }
 
 .partners {
@@ -639,7 +639,7 @@ td[name="grad2"] {
   } */
 
 .infoCont {
-    padding-top: 100px;
+    padding-top: 150px;
     grid-area: info;
     display: flex;
     align-items: center;
@@ -1509,6 +1509,13 @@ footer {
     background-image: linear-gradient(169.18deg, #030f2a, #09142d), radial-gradient(circle at top, #D2EEFF -19.31%, #5CBDFF 8.35%, #528EFC 40.93%, #8B94F3 66.13%, #A08FCE 98.71%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
+}
+
+.btnExtra{
+    border-radius: 8px !important;
+    padding: 15px 40px !important;
+    width: 23% !important;
+    text-align: center;
 }
 
 .btn2 {
