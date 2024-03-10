@@ -64,6 +64,23 @@
 }
 
 @media only screen and (max-width: 1100px) {
+.titleTextGradiant{
+    font-size: 30px;
+    text-align: left;
+}
+.subTitle{
+    font-size: 15px;
+    text-align: left;
+}
+.headerList ul li{
+    font-size: 15px;
+}
+.header{
+    padding: 0;
+    padding-top: 10%;
+    text-align: left;
+    width: 100%;
+}
 .container3{
     width: 90%;
     margin-left: 5%;
@@ -100,12 +117,6 @@
     height: 1400px;
 }
 .leaderboardheader .subTitle{
-    text-align: center;
-}
-.titleTextGradiant{
-    text-align: center;
-}
-.headerList{
     text-align: center;
 }
 .subtext6{
@@ -191,17 +202,50 @@
 
 @media only screen and (max-width: 500px) {
     .btnFluxcore2, .btnFluxcore, .btnExtra{
-        width: 100% !important;
+        width: 80% !important;
         margin-right: 0px;
     }
+    .partnersCont{
+        margin-left: 0;
+        flex-wrap: wrap;
+    }
+    .partnersCont svg{
+        width: 30% !important;
+    }
+    .sectionHeader{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .btnFluxcore2{
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        margin-top: -70px;
+    }
     .btn{
-        margin-right: 0px;
+        align-self: center;
+        text-align: center;
     }
     .card img{
         width: 80% !important;
     }
     .service{
-        height: 3100px !important;
+        height: 3600px !important;
+    }
+    .card svg{
+        margin-top: -10% !important;
+    }
+    .card h3{
+        margin-left: 0;
+        align-self: center !important;
+    }
+    .partnersCont img{
+        width: 20% !important;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .cardCont{
+        height: 1500px !important;
     }
     .ecosystem{
         height: 390px !important;
@@ -236,6 +280,10 @@
         width: 150px;
         height: 50px;
         padding: 0;
+        font-size: 20px;
+    }
+    .papers{
+        height: 1000px !important;
     }
     .leaderboardheader .titleTextGradiant{
         font-size: 50px;
@@ -277,11 +325,12 @@
         justify-content: center;
         flex-direction: column;
     }
-    .headerList{
-        align-self: center;
-    }
     .rectangle{
-        align-self: center;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    header{
+        height: 600px;
     }
     .partnersCont{
         width: 85%;
@@ -307,6 +356,27 @@
         'three'
         ;
         height: 1200px;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .gridItem2{
+        padding: 0;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .gridItem1{
+        align-items: flex-start;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .gridItem3{
+        align-items: flex-start;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .gridItem2 img{
+        width: 100%;
     }
     .service{
         height: 3000px;
@@ -444,11 +514,21 @@
     
         /* Text md/Regular */
         font-family: Inter;
-        font-size: 7px;
+        font-size: 8px;
         font-style: normal;
         font-weight: 400;
-        line-height: 24px; /* 150% */
+        line-height: 10px; /* 150% */
         width: 100%;
+    }
+    .sectionTitleEmail{
+        font-size: 25px;
+        text-align: center;
+        width: 90%;
+        margin-left: 5%;
+    }
+    .guarantee{
+        width: 100% !important;
+        margin-left: 0 !important;
     }
     .emailInput{
         width:40%;
@@ -522,7 +602,7 @@
 
 @media only screen and (max-width: 650px) {
     .sectionTitleTextGrad{
-        font-size: 30px;
+        font-size: 25px;
     }
     .sectionTitleText{
         font-size: 30px;
