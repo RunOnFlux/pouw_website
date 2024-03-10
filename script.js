@@ -102,6 +102,8 @@ function show(data){
   benchmarks.innerHTML = data.TotalBenchmark;
   let workers = document.getElementById("workers");
   workers.innerHTML = data.TotalMachine;
+  let cpu = document.getElementById("cpu");
+cpu.innerHTML = data.TotalGPU;
 }
 
 // api url
