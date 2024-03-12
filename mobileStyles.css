@@ -207,7 +207,6 @@
     }
     .partnersCont{
         margin-left: 0;
-        flex-wrap: wrap;
     }
     .partnersCont svg{
         width: 30% !important;
@@ -215,6 +214,9 @@
     .sectionHeader{
         width: 90%;
         margin-left: 5%;
+    }
+    .sectionHeader h1{
+        margin-bottom: 5%;
     }
     .btnFluxcore2{
         visibility: hidden;
@@ -248,7 +250,7 @@
         align-self: center !important;
     }
     .partnersCont img{
-        width: 20% !important;
+        width: 10% !important;
         margin-left: 10px;
         margin-right: 10px;
     }
@@ -343,10 +345,10 @@
     header{
         height: 600px;
     }
-    .partnersCont{
-        width: 85%;
-        margin-left: 7.5%;
+    .partners{
+        overflow-x: scroll;
     }
+
     .partnersCont svg{
         width: 15%;
     }
@@ -362,9 +364,9 @@
     .grid1{
         grid-template-areas: 
         'one'
-        'two'
-        'two'
         'three'
+        'two'
+        'two'
         ;
         height: 1200px;
         width: 90%;
@@ -567,7 +569,7 @@
         height: 800px;
     }
     .partnersCont{
-        width: 90%;
+        width: 220%;
         margin-left: 5%;
     }
     .partners .partnersCont svg, .partners .partnersCont img{
@@ -634,6 +636,7 @@
         height: 1015px;
     }
     .subtext{
+        line-height: 20px !important;
         font-weight: 500;
     }
     .card svg{
