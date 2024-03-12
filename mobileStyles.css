@@ -227,13 +227,21 @@
         text-align: center;
     }
     .card img{
-        width: 80% !important;
+        width: 95% !important;
     }
     .service{
-        height: 3600px !important;
+        height: 3216px !important;
+    }
+    .footerTop div{
+        text-align: left;
+
+    }
+    .footer{
+        width: 100%;
+        margin-left: 0;
     }
     .card svg{
-        margin-top: -10% !important;
+        margin-top: -20% !important;
     }
     .card h3{
         margin-left: 0;
@@ -267,6 +275,8 @@
     }
     .tableTop{
         flex-wrap: wrap;
+        flex-direction: column-reverse;
+        gap: 15px;
     }
     .greyBtn{
         margin-bottom: 5px;
@@ -291,6 +301,7 @@
     .headerleft{
         width: 100% !important;
         padding: 0;
+        padding-left: 4%;
         margin: 0 !important;
     }
     .divOne{
@@ -362,21 +373,32 @@
     }
     .gridItem2{
         padding: 0;
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .gridItem1{
         align-items: flex-start;
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .gridItem3{
         align-items: flex-start;
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .gridItem2 img{
+        width: auto;
+        height: 100%;
+        margin-left: -10%;
+    }
+    .gridItem2 div{
+        display: flex;
+        justify-content: start;
         width: 100%;
+        margin-left: 0%;
+        height: auto;
+        overflow: hidden;
+        border-radius: 15px;
     }
     .service{
         height: 3000px;
@@ -605,7 +627,11 @@
         font-size: 25px;
     }
     .sectionTitleText{
-        font-size: 30px;
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .grid1{
+        height: 1015px;
     }
     .subtext{
         font-weight: 500;
@@ -643,12 +669,29 @@
     }
     .footerTop{
         flex-direction: column;
+        justify-content: start;
+        gap: 10px;
+    }
+    .footerTop div{
+        justify-content: space-evenly;
+        width: 100%;
     }
     .footerBottom{
-        flex-direction: column;
+        flex-direction: column-reverse;
+        gap: 10px;
     }
     .imgCont{
         margin-right: 0px;
+    }
+    .footerBottom div{
+        gap:60px;
+        width: 100%;
+    }
+    .copyright{
+        width: 97%;
+        margin-left: 1.5%;
+        text-align: left;
+        font-weight: 100;
     }
 }
 
