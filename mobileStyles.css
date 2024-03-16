@@ -205,6 +205,9 @@
         width: 80% !important;
         margin-right: 0px;
     }
+    header{
+        background-position: 25%;
+    }
     .partnersCont{
         margin-left: 0;
     }
@@ -229,7 +232,8 @@
         text-align: center;
     }
     .card img{
-        width: 95% !important;
+        width: 85% !important;
+        padding-bottom: 10px;
     }
     .service{
         height: 3216px !important;
@@ -250,7 +254,6 @@
         align-self: center !important;
     }
     .partnersCont img{
-        width: 10% !important;
         margin-left: 10px;
         margin-right: 10px;
     }
@@ -261,14 +264,17 @@
         height: 390px !important;
     }
     .infoSquare{
-        width: 100% !important;
-        height: 30% !important;
+        width: 70% !important;
+        height: auto !important;
+        padding: 0;
+        margin-bottom: 5%;
     }
     .infoCont{
         padding-top: 0px;
     }
     .metrics{
-        height: 2500px !important;
+        padding-top: 5%;
+        height: 1500px !important;
     }
     .subText4{
         width: 100% !important;
@@ -284,8 +290,9 @@
         margin-bottom: 5px;
     }
     .iconCont{
-        width: unset;
-        height: unset;
+        width: 50%;
+        margin-top: -50px;
+        margin-bottom: 0;
     }
 
     .transBtn{
@@ -345,8 +352,40 @@
     header{
         height: 600px;
     }
+    .partnersCont
+    {  
+        width: 800px;
+        animation-name: slide;
+        animation-duration: 8s;
+        animation-direction: normal;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+    }
+      @keyframes slide {
+        0% {
+          margin-left: 150px;
+        }
+        16.66% {
+            margin-left: 000px;
+        }
+        33.32% {
+            margin-left: -150px;
+        }
+        49.98% {
+            margin-left: -300px;
+        }
+        66.64% {
+            margin-left: -450px;
+        }
+        83.30% {
+            margin-left: -700px;
+        }
+        100% {
+            margin-left: 150px;
+        }
+      }
     .partners{
-        overflow-x: scroll;
+        overflow: hidden;
     }
 
     .partnersCont svg{
@@ -382,16 +421,17 @@
         align-items: flex-start;
         padding-left: 15px;
         padding-right: 15px;
+        padding: 15px;
     }
     .gridItem3{
         align-items: flex-start;
+        padding: 15px;
         padding-left: 15px;
         padding-right: 15px;
     }
     .gridItem2 img{
-        width: auto;
-        height: 100%;
-        margin-left: -10%;
+        width: 100%;
+        height: auto;
     }
     .gridItem2 div{
         display: flex;
@@ -543,6 +583,7 @@
         font-weight: 400;
         line-height: 10px; /* 150% */
         width: 100%;
+        display: block;
     }
     .sectionTitleEmail{
         font-size: 25px;
@@ -568,10 +609,7 @@
         padding-bottom: 100px;
         height: 800px;
     }
-    .partnersCont{
-        width: 220%;
-        margin-left: 5%;
-    }
+
     .partners .partnersCont svg, .partners .partnersCont img{
         width: 18%;
     }
@@ -652,14 +690,17 @@
         font-size: 16px;
     }
     .dapapers div{
-        width: 70%;
-        margin-left: 15%;
-        height: 350px;
+        width: 90%;
+        margin-left: 5%;
+        height: 50%;
     }
     .dapapers .div2{
-        width: 70%;
-        margin-left: 15%;
-        height: 500px;
+        width: 90%;
+        margin-left: 5%;
+        height: 50%;
+    }
+    .dapapers{
+        height: 840px;
     }
     .FAQCONT div p{
         font-size: 13px;
