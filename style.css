@@ -69,7 +69,7 @@ nav {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: Montserrat;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .btnFluxcore2{
@@ -88,7 +88,7 @@ nav {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: Montserrat;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .alignTextCenter {
@@ -142,7 +142,7 @@ nav {
     font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 150%; /* 21px */
     justify-content: left;
     background: white;
@@ -271,7 +271,7 @@ li a:active {
     color: #FFF;
     font-size: 18px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 26px;
     /* 144.444% */
     letter-spacing: -0.1px;
@@ -310,7 +310,7 @@ li a:active {
     font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 150%;
     /* 22.872px */
     background: var(--linear-nice, linear-gradient(90deg, #D2EEFF 0%, #5CBDFF 23.44%, #528EFC 51.04%, #8B94F3 72.40%, #A08FCE 100%));
@@ -461,7 +461,7 @@ li a:active {
     font-family: Montserrat;
     font-size: 30px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 30px;
     /* 136.364% */
     letter-spacing: -0.22px;
@@ -518,7 +518,7 @@ li a:active {
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 24px;
     /* 150% */
     letter-spacing: -0.1px;
@@ -557,7 +557,7 @@ td[name="grad2"] {
     font-family: Inter;
     font-size: 12px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 24px;
     /* 200% */
     letter-spacing: -0.1px;
@@ -576,7 +576,7 @@ td[name="grad2"] {
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 24px; /* 150% */
     width: 70%;
 }
@@ -611,7 +611,7 @@ td[name="grad2"] {
     font-family: Montserrat;
     font-size: 12px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 150%;
     /* 18px */
     display: flex;
@@ -624,7 +624,7 @@ td[name="grad2"] {
     font-family: Montserrat;
     font-size: 12px;
     font-style: italic;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 150%;
 }
 
@@ -669,7 +669,7 @@ td[name="grad2"] {
     font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 150%;
     /* 24px */
 }
@@ -728,7 +728,7 @@ td[name="grad2"] {
     font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 21px;
     /* 150% */
     display: flex;
@@ -758,7 +758,7 @@ td[name="grad2"] {
     font-family: Montserrat;
     font-size: 12px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 14.535px;
     /* 145.353% */
     background: rgba(235, 238, 255, 0.10);
@@ -775,7 +775,7 @@ td[name="grad2"] {
     font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 21px;
     text-align: center;
     /* 150% */
@@ -790,7 +790,7 @@ td[name="grad2"] {
     font-family: Montserrat;
     font-size: 12px;
     font-style: normal;
-    font-weight: 400;
+    font-weight:300;
     line-height: 16px;
     /* 133.333% */
     letter-spacing: -0.48px;
@@ -808,7 +808,7 @@ td[name="grad2"] {
     font-family: Montserrat;
     font-size: 11px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 10px;
     /* 90.909% */
 }
@@ -818,7 +818,7 @@ td[name="grad2"] {
     font-family: Montserrat;
     font-size: 10px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 7.772px;
 }
 
