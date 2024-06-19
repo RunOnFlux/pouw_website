@@ -215,8 +215,8 @@
         width: 30% !important;
     }
     .sectionHeader{
-        width: 90%;
-        margin-left: 5%;
+        width: 90% !important;
+        margin-left: 5% !important;
     }
     .sectionHeader h1{
         margin-bottom: 5%;
@@ -228,6 +228,7 @@
         margin-top: -70px;
     }
     .btn{
+        padding: 5px 10px;
         align-self: center;
         text-align: center;
     }
@@ -258,7 +259,7 @@
         margin-right: 10px;
     }
     .cardCont{
-        height: 1500px !important;
+        height: 2000px !important;
     }
     .ecosystem{
         height: 390px !important;
@@ -302,7 +303,7 @@
         font-size: 20px;
     }
     .papers{
-        height: 1000px !important;
+        height: 1200px !important;
     }
     .leaderboardheader .titleTextGradiant{
         font-size: 50px;
@@ -651,6 +652,7 @@
         height: 1000px;
     }
     .perks{
+        padding-top: 250px;
         height: 2700px;
     }
     .dapapers{
@@ -679,6 +681,10 @@
     .sectionTitleText{
         font-size: 25px;
         margin-bottom: 20px;
+    }
+    .subtext7{
+        width: 100%;
+        font-size: 15px;
     }
     .grid1{
         height: 1015px;
