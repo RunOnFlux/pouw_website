@@ -304,6 +304,45 @@ li a:active {
     margin-top: 35px;
 
 }
+#partners .partnersCont
+    {  
+        width: 800px;
+        animation-name: slide;
+        animation-duration: 8s;
+        animation-direction: normal;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+    }
+      @keyframes slide {
+        0% {
+          margin-left: 1000px;
+        }
+        16.66% {
+            margin-left: 800px;
+        }
+        33.32% {
+            margin-left: 600px;
+        }
+        49.98% {
+            margin-left: 400px;
+        }
+        66.64% {
+            margin-left: 200px;
+        }
+        83.30% {
+            margin-left: 000px;
+        }
+        100% {
+            margin-left: 1000px;
+        }
+      }
+    .partners{
+        overflow: hidden;
+    }
+
+    .partnersCont svg{
+        width: 15%;
+    }
 
 .gradiantText {
     text-align: center;
