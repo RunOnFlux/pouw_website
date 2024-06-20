@@ -22,6 +22,127 @@ header {
     background-size: cover;
 }
 
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    backdrop-filter: blur(3px); /* Apply blur to the entire overlay */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.available-now {
+    font-size: 36px;
+    font-weight: bold;
+    color: white; /* Adjust the color as needed */
+    text-align: center;
+    padding: 20px;
+}
+
+.countdown-card {
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 30px;
+    border-radius: 15px;
+    border: double 1.5px transparent;
+    color: white;
+    font-size: 12px;
+    background-image: linear-gradient(169.18deg, #030f2a, #09142d), radial-gradient(circle at top, #D2EEFF -19.31%, #5CBDFF 8.35%, #528EFC 40.93%, #8B94F3 66.13%, #A08FCE 98.71%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    width: auto !important;
+    text-align: center;
+    position: relative; /* Needed for absolute positioning of close button */
+    z-index: 1001; 
+}
+
+.countdown-close-button {
+    position: absolute;
+    top: 1px;
+    right: 5px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.countdown-close-button:hover {
+    color: rgba(43, 97, 209, 1);
+}
+
+.countdown-logo {
+    width: 150px;
+    height: auto;
+    margin: 10px 0;
+}
+
+.countdown-text {
+    /* margin: 10px 0; */
+    font-size: 24px;
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.countdown-time-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    margin: 0 5px;
+    text-align: center;
+    border-radius: 10px;
+    border: double 1.5px transparent;
+    background-image: linear-gradient(169.18deg, #030f2a, #09142d), radial-gradient(circle at top, #D2EEFF -19.31%, #5CBDFF 8.35%, #528EFC 40.93%, #8B94F3 66.13%, #A08FCE 98.71%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+
+}
+
+.countdown-number {
+    font-size: 30px;
+    font-weight: none;
+}
+
+.countdown-label {
+    font-size: 14px;
+}
+
+#cancelButton {
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 25px;
+    border: double 1.5px transparent;
+    color: white;
+    font-size: 12px;
+    background-image: linear-gradient(169.18deg, #030f2a, #09142d), radial-gradient(circle at top, #D2EEFF -19.31%, #5CBDFF 8.35%, #528EFC 40.93%, #8B94F3 66.13%, #A08FCE 98.71%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+
+    border-radius: 8px !important;
+    width: auto !important;
+    text-align: center;
+}
+
+#cancelButton:hover {
+    color: rgba(43, 97, 209, 1);
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -195,9 +316,6 @@ li[name="buttons"] a {
     align-items: center;
     gap: 2px;
 }
-
-
-
 
 .gradientBtn {
     border-radius: 100px;
