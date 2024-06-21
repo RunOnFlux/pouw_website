@@ -149,7 +149,7 @@ getapi(api_url);
 
 function show(data){
   let ram = document.getElementById("totalRam");
-  ram.innerHTML = data.TotalRAM + " GB";
+  ram.innerHTML = data.TotalRAM / 1000 + " TB";
   let cores = document.getElementById("totalCores");
   cores.innerHTML = data.TotalCore;
   let benchmarks = document.getElementById("benchmarks");
@@ -157,7 +157,7 @@ function show(data){
   let cpu = document.getElementById("cpu");
 cpu.innerHTML = data.TotalGPU;
 let storage = document.getElementById("storage");
-storage.innerHTML = data.TotalStorage + " GB";
+storage.innerHTML = data.TotalStorage / 1000 + " TB";
 }
 
 // api url
@@ -235,7 +235,7 @@ function show2(data) {
     <span class="span2">${r.Computer.cpus[0].num_cores} CORES</span>
     </td> 
     <td>${r.Computer.gpus[0].model}</td>
-    <td>${r.Computer.TotalMemory / 1024}</td>
+    <td>${Math.floor(r.Computer.TotalMemory / 1024)+ " GB"}</td>
     <td>${r.Computer.storages[0].manufacturer}</td>
     <td>${r.Score}</td></tr>`
     let numr = `${r.Rank}`;
