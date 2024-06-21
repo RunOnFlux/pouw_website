@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 1000);
     }
 
-    let countdownDate = new Date("June 26, 2024 20:00:00 UTC").getTime();
+    let countdownDate = new Date("June 26, 2024 6:00:00 UTC").getTime();
     startCountdown(countdownDate);
 });
 
