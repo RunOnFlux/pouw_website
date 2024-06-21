@@ -291,7 +291,8 @@
         margin-bottom: 5px;
     }
     .iconCont{
-        width: 50%;
+        width: 100px;
+        height:100px;
         margin-top: -50px;
         margin-bottom: 0;
     }
