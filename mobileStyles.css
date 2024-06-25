@@ -23,6 +23,22 @@
     .container .greyBtn{
         width: 200px;
     }
+    .papersCont{
+        grid-template-areas: 
+        'text'
+        'btns'
+        ;
+        align-items: center;
+    }
+    .dapapers{
+        justify-content: center;
+    }
+    .emailSubmit{
+        width: 10%;
+    }
+    .infoSquare{
+        width: 45%;
+    }
 }
 
 @media only screen and (max-width: 1300px) {
@@ -31,13 +47,6 @@
     }
     .systemInfo{
         flex-wrap: wrap;
-    }
-    .infoSquare{
-        width: 50% !important;
-        height: 20% !important;
-    }
-    .infoCont{
-        padding-top: 20px;
     }
 }
 
@@ -60,6 +69,42 @@
     }
     .scoresGrid div div h1{
         font-size: 30px;
+    }
+    .grid1{
+        grid-template-areas:
+        'one'
+        'three'
+        'two'
+        'two'
+        ;
+    }
+    .grid1 div{
+        min-height:200px;
+    }
+    .gridItem2{
+        min-height: 300px !important;
+    }
+    .gridItem2 img{
+        width: 30%;
+    }
+    .grid1 .sectionTitleText{
+        font-size: 45px;
+    }
+    .daPerks{
+        grid-template-areas: 
+        'one two'
+        'three four'
+        'five six'
+        ;
+    }
+    .two{
+        margin-top: 0;
+    }
+    .five{
+        margin-top: 0;
+    }
+    .perks{
+        height: 1500px;
     }
 }
 
@@ -430,8 +475,8 @@
         padding-right: 15px;
     }
     .gridItem2 img{
-        width: 100%;
-        height: auto;
+        width: auto;
+        max-height: 250px;
     }
     .gridItem2 div{
         display: flex;
@@ -443,10 +488,11 @@
         border-radius: 15px;
     }
     .service{
-        height: 3000px;
+        height: 2600px;
     }
     .cardCont{
         flex-direction: column;
+        flex-wrap: wrap;
         height: 1100px;
     }
     .card{
@@ -502,11 +548,10 @@
         gap: 2%;
     }
     .infoSquare{
-        height: 100%;
-        padding: 5%;
+        height: 50%;
     }
     .metrics{
-        height: 1400px;
+        height: 1200px;
     }
     .tableBottom{
         overflow-x: scroll;
@@ -652,13 +697,13 @@
     }
     .perks{
         padding-top: 250px;
-        height: 2700px;
+        height: 2800px;
     }
     .dapapers{
         gap: 10px;
     }
     .papers{
-        height: 1300px;
+        height: 1400px;
     }
     .FAQCONT{
         width: 90%;
