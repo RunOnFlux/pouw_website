@@ -424,7 +424,7 @@ li a:active {
 }
 #partners .partnersCont
     {  
-        width: 1500px;
+        width: 1600px;
         gap: 30px;
         animation-name: slide;
         animation-duration: 8s;
