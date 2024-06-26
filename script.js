@@ -30,40 +30,40 @@ document.addEventListener("DOMContentLoaded", function() {
     exitButton.addEventListener("click", closeOverlay);
     closeButton.addEventListener("click", closeOverlay);
 
-    function startCountdown(endDate) {
-        let timer = setInterval(function() {
-            let now = new Date().getTime();
-            let distance = endDate - now;
+//     function startCountdown(endDate) {
+//         let timer = setInterval(function() {
+//             let now = new Date().getTime();
+//             let distance = endDate - now;
 
-            if (distance < 0) {
-                clearInterval(timer);
-                daysElement.innerText = 0;
-                hoursElement.innerText = 0;
-                minutesElement.innerText = 0;
-                secondsElement.innerText = 0;
-                countdownTimer.style.display = "none";
-                const availableNowMessage = document.createElement("div");
-                availableNowMessage.className = 'available-now';
-                availableNowMessage.innerText = "Available Now";
-                countdowndisplayElement.appendChild(availableNowMessage);
-                return;
-            }
+//             if (distance < 0) {
+//                 clearInterval(timer);
+//                 daysElement.innerText = 0;
+//                 hoursElement.innerText = 0;
+//                 minutesElement.innerText = 0;
+//                 secondsElement.innerText = 0;
+//                 countdownTimer.style.display = "none";
+//                 const availableNowMessage = document.createElement("div");
+//                 availableNowMessage.className = 'available-now';
+//                 availableNowMessage.innerText = "Available Now";
+//                 countdowndisplayElement.appendChild(availableNowMessage);
+//                 return;
+//             }
 
-            let days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+//             let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+//             let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//             let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//             let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            daysElement.innerText = days;
-            hoursElement.innerText = hours;
-            minutesElement.innerText = minutes;
-            secondsElement.innerText = seconds;
-        }, 1000);
-    }
+//             daysElement.innerText = days;
+//             hoursElement.innerText = hours;
+//             minutesElement.innerText = minutes;
+//             secondsElement.innerText = seconds;
+//         }, 1000);
+//     }
 
-    let countdownDate = new Date("June 26, 2024 6:00:00 UTC").getTime();
-    startCountdown(countdownDate);
-});
+//     let countdownDate = new Date("June 26, 2024 6:00:00 UTC").getTime();
+//     startCountdown(countdownDate);
+// });
 
 function showFaq(number){
     if(number == 1){
