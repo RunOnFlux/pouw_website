@@ -455,14 +455,16 @@ li a:active {
     height: 800px;
   }
 
-  .gridCont{
-    display: grid;
+  .gridCont {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
     width: 80%;
     margin-left: 10%;
-    grid-template-areas: 
-    'img info info info'
+    grid-template-areas:
+        'info info info'
     ;
-  }
+}
 
   .smallText{
     color: #7EC897;
@@ -494,24 +496,33 @@ li a:active {
     height: 100%;
   } */
 
-  .infoCont{
+  .infoCont {
+    padding-top: 150px;
     grid-area: info;
     display: flex;
     align-items: center;
-  }
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    gap: 5%;
+    max-width: 1200px;
+    width: 100%;
+}
 
-.infoSquare{
+.infoSquare {
+    flex: 1 1 200px;
+    max-width: 300px;
     border: double 3px transparent;
     background-image: linear-gradient(169.18deg, #fff, #e4e8f3), radial-gradient(circle at top, #D2EEFF -19.31%, #5CBDFF 8.35%, #528EFC 40.93%, #8B94F3 66.13%, #A08FCE 98.71%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
-    width: 100%;
+    width: 22%;
     height: 70%;
     border-radius: 15px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
 }
 
 .infoSquare p{
@@ -523,6 +534,7 @@ li a:active {
     font-weight: 700;
     line-height: 150%; /* 24px */
 }
+
 
 .infoSquare div{
     width: 50px;
