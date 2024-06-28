@@ -11,24 +11,24 @@ function dropdownFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    const exitButton = document.getElementById("cancelButton");
-    const closeButton = document.getElementById("closeButton");
-    const overlay = document.getElementById("overlay");
-    const countdownTimer = document.getElementById("countdowntimer");
-    const daysElement = document.getElementById("days");
-    const hoursElement = document.getElementById("hours");
-    const minutesElement = document.getElementById("minutes");
-    const secondsElement = document.getElementById("seconds");
-    const countdownElement = document.getElementById("countdown");
-    const countdowndisplayElement = document.getElementById("countdowndisplay");
+// document.addEventListener("DOMContentLoaded", function() {
+//     const exitButton = document.getElementById("cancelButton");
+//     const closeButton = document.getElementById("closeButton");
+//     const overlay = document.getElementById("overlay");
+//     const countdownTimer = document.getElementById("countdowntimer");
+//     const daysElement = document.getElementById("days");
+//     const hoursElement = document.getElementById("hours");
+//     const minutesElement = document.getElementById("minutes");
+//     const secondsElement = document.getElementById("seconds");
+//     const countdownElement = document.getElementById("countdown");
+//     const countdowndisplayElement = document.getElementById("countdowndisplay");
 
-    function closeOverlay() {
-        overlay.style.display = "none";
-    }
+//     function closeOverlay() {
+//         overlay.style.display = "none";
+//     }
 
-    exitButton.addEventListener("click", closeOverlay);
-    closeButton.addEventListener("click", closeOverlay);
+//     exitButton.addEventListener("click", closeOverlay);
+//     closeButton.addEventListener("click", closeOverlay);
 
 //     function startCountdown(endDate) {
 //         let timer = setInterval(function() {
