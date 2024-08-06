@@ -910,3 +910,20 @@
         margin-top: 10px; /* Add margin to ensure space between heading and text */
     }
 }
+
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 10px 0;
+    }
+    .spacer {
+        height: auto;
+        padding: 10px 0;
+    }
+    .headerleft {
+        font-size: 14px; /* Example: Reduce font size */
+    }
+    .subTitle, .rectangle, .titleTextGradiant, .subtext7, .btnFluxcore2, .btnExtra {
+        margin: 10px 0; /* Example: Adjust margins */
+    }
+}
