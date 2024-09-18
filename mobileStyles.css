@@ -36,9 +36,6 @@
     .emailSubmit{
         width: 10%;
     }
-    .infoSquare{
-        width: 45%;
-    }
 }
 
 @media only screen and (max-width: 1300px) {
@@ -78,14 +75,8 @@
         'two'
         ;
     }
-    .grid1 div{
-        min-height:200px;
-    }
-    .gridItem2{
-        min-height: 300px !important;
-    }
-    .gridItem2 img{
-        width: 30%;
+    .gridItem2 img {
+        width: auto;
     }
     .grid1 .sectionTitleText{
         font-size: 30px;
@@ -96,6 +87,7 @@
         'three four'
         'five six'
         ;
+        row-gap: 30px;
     }
     .two{
         margin-top: 0;
@@ -103,79 +95,76 @@
     .five{
         margin-top: 0;
     }
-    .perks{
-        height: 1500px;
-    }
 }
 
 @media only screen and (max-width: 1100px) {
-.titleTextGradiant{
-    font-size: 30px;
-    text-align: left;
-}
-.subTitle{
-    font-size: 15px;
-    text-align: left;
-}
-.headerList ul li{
-    font-size: 15px;
-}
-.header{
-    padding: 0;
-    padding-top: 10%;
-    text-align: left;
-    width: 100%;
-}
-.container3{
-    width: 90%;
-    margin-left: 5%;
-    margin-top: 5%;
-}
-.systemInfo{
-    justify-content: space-evenly;
-}
-.container{
-    grid-template-areas: 
-    'one one'
-    'two two'
-    'three three'
-    'four four';
-    height: 450px;
-}
-.divTwo{
-    padding: 0;
-    justify-content: center;
-}
-.divThree{
-    justify-content: center;
-    padding: 0;
-}
-.divFour{
-    padding: 0;
-    justify-content: center;
-}
-.container4{
-    width: 95%;
-    margin-left: 2.5%;
-}
-.leaderboardheader{
-    height: 1400px;
-}
-.leaderboardheader .subTitle{
-    text-align: center;
-}
-.subtext6{
-    width: 60%;
-    margin-left: 20%;
-}
-.gridtop div{
-    flex-wrap: wrap;
-    margin: 5%;
-    margin-top: 1.5%;
-    margin-bottom: 0;
-    justify-content: center;
-    gap: 10px;
-}
+    .titleTextGradiant{
+        font-size: 52px;
+        text-align: left;
+    }
+    .subTitle{
+        font-size: 24px;
+        text-align: left;
+    }
+    .headerList ul li{
+        font-size: 15px;
+    }
+    .header{
+        padding-left: 5%;
+        padding-top: 10%;
+        text-align: left;
+        width: 100%;
+    }
+    .container3{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    .systemInfo{
+        justify-content: space-evenly;
+    }
+    .container{
+        grid-template-areas: 
+        'one one'
+        'two two'
+        'three three'
+        'four four';
+        height: 450px;
+    }
+    .divTwo{
+        padding: 0;
+        justify-content: center;
+    }
+    .divThree{
+        justify-content: center;
+        padding: 0;
+    }
+    .divFour{
+        padding: 0;
+        justify-content: center;
+    }
+    .container4{
+        width: 95%;
+        margin-left: 2.5%;
+    }
+    .leaderboardheader{
+        height: 1400px;
+    }
+    .leaderboardheader .subTitle{
+        text-align: center;
+    }
+    .subtext6{
+        width: 60%;
+        margin-left: 20%;
+    }
+    .gridtop div{
+        flex-wrap: wrap;
+        margin: 5%;
+        margin-top: 1.5%;
+        margin-bottom: 0;
+        justify-content: center;
+        gap: 10px;
+    }
 }
 @media only screen and (max-width: 900px) {
     .scoresGrid{
@@ -183,6 +172,9 @@
     }
     .systemInfo{
         gap: 10px;
+    }
+    .subtext7 {
+        width: 75%;
     }
 }
 
@@ -215,8 +207,9 @@
     .sliders{
         height: 2300px;
     }
-    .infoSquare{
-        width: 80% !important;
+    .subtext7 {
+        width: 85%;
+        font-size: 15px;
     }
 }
 
@@ -228,6 +221,9 @@
 }
 
 @media only screen and (max-width: 650px) {
+    header {
+        background-position: 35%;
+    }
     .leaderboardheader{
         height: 1600px;
     }
@@ -236,6 +232,10 @@
     }
     .leaderboardheader .titleTextGradiant{
         font-size: 70px;
+    }
+    .subtext7 {
+        width: 85%;
+        font-size: 15px;
     }
 }
 
@@ -247,12 +247,12 @@
 
 
 @media only screen and (max-width: 500px) {
-    .btnFluxcore2, .btnFluxcore, .btnExtra{
+    .btnFluxcore, .btnExtra{
         width: 80% !important;
         margin-right: 0px;
         display: block;
     }
-    header{
+    header {
         background-position: 25%;
     }
     .partnersCont{
@@ -268,12 +268,6 @@
     .sectionHeader h1{
         margin-bottom: 5%;
     }
-    .btnFluxcore2{
-        visibility: hidden;
-        width: 0;
-        height: 0;
-        margin-top: -70px;
-    }
     .btn{
         padding: 5px 10px;
         align-self: center;
@@ -283,9 +277,6 @@
     .card img{
         width: 85% !important;
         padding-bottom: 10px;
-    }
-    .service{
-        height: 3216px !important;
     }
     .footerTop div{
         text-align: left;
@@ -305,25 +296,6 @@
     .partnersCont img{
         margin-left: 10px;
         margin-right: 10px;
-    }
-    .cardCont{
-        height: 2000px !important;
-    }
-    .ecosystem{
-        height: 390px !important;
-    }
-    .infoSquare{
-        width: 70% !important;
-        height: auto !important;
-        padding: 0;
-        margin-bottom: 5%;
-    }
-    .infoCont{
-        padding-top: 0px;
-    }
-    .metrics{
-        padding-top: 5%;
-        height: 1300px !important;
     }
     .subText4{
         width: 100% !important;
@@ -346,15 +318,13 @@
     }
 
     .transBtn{
-        width: 150px;
-        height: 50px;
         padding: 0;
         font-size: 20px;
     }
-    .papers{
-        height: 1200px !important;
+    .titleTextGradiant {
+        font-size: 30px !important;
     }
-    .leaderboardheader .titleTextGradiant{
+    .leaderboardheader {
         font-size: 50px;
     }
     .headerleft{
@@ -386,10 +356,6 @@
 
 /* Adjust styles for screens smaller than 650px */
 @media only screen and (max-width: 650px) {
-    .subtext7 {
-        width: 100%;
-        font-size: 15px;
-    }
     .btnFluxcore2, .btnExtra {
         display: block;
         width: 100%;
@@ -399,26 +365,13 @@
     .btnExtra {
         margin-top: 5px;
     }
+    .titleTextGradiant{
+        font-size: 40px;
+    }
 }
 
-
-
-
-@media only screen and (max-width: 1000px) {
-    .spacer {
-      text-align: center;
-    }
-    .headerleft{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .rectangle{
-        margin-bottom: 10px;
-        margin-top: 10px;
-    }
-    .partnersCont
-    {  
+@media only screen and (max-width: 1450px) {
+    .partnersCont {  
         width: 800px;
         animation-name: slide;
         animation-duration: 8s;
@@ -426,9 +379,9 @@
         animation-timing-function: ease;
         animation-iteration-count: infinite;
     }
-      @keyframes slide {
+    @keyframes slide {
         0% {
-          margin-left: 150px;
+            margin-left: 150px;
         }
         16.66% {
             margin-left: 000px;
@@ -448,13 +401,24 @@
         100% {
             margin-left: 150px;
         }
-      }
+    }
     .partners{
         overflow: hidden;
     }
-
     .partnersCont svg{
         width: 15%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .headerleft{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .rectangle{
+        margin-bottom: 30px;
+        margin-top: 30px;
     }
     .sectionTitleTextGrad{
         font-size: 40px;
@@ -472,48 +436,23 @@
         'two'
         'two'
         ;
-        height: 1200px;
         width: 90%;
         margin-left: 5%;
         margin-right: 5%;
     }
     .gridItem2{
-        padding: 0;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding: 15px;
     }
     .gridItem1{
-        align-items: flex-start;
         padding-left: 15px;
         padding-right: 15px;
-        padding: 15px;
     }
     .gridItem3{
-        align-items: flex-start;
-        padding: 15px;
         padding-left: 15px;
         padding-right: 15px;
     }
     .gridItem2 img{
         width: auto;
-        max-height: 250px;
-    }
-    .gridItem2 div{
-        display: flex;
-        justify-content: start;
-        width: 100%;
-        margin-left: 0%;
-        height: auto;
-        overflow: hidden;
-        border-radius: 15px;
-    }
-    .service{
-        height: 2600px;
-    }
-    .cardCont{
-        flex-direction: column;
-        flex-wrap: wrap;
-        height: 1100px;
     }
     .card{
         display: flex;
@@ -563,25 +502,12 @@
         text-align: center;
         margin-right: -80px;
     }
-    .infoCont{
-        flex-wrap: wrap;
-        gap: 2%;
-    }
-    .infoSquare{
-        height: 50%;
-    }
-    .metrics{
-        height: 1200px;
-    }
     .tableBottom{
         overflow-x: scroll;
     }
     .tableBottom table{
         width: 1500px;
         margin-right: 5%;
-    }
-    .benchmark{
-        height: 1200px;
     }
     .daPerks{
         grid-template-areas: 
@@ -592,9 +518,6 @@
         'five'
         'six'
         ;
-    }
-    .perks{
-        height: 2800px;
     }
     .two{
         margin-top: 0;
@@ -615,25 +538,6 @@
     }
     .sectionHeader2 .subText4{
         text-align: center;
-    }
-    .dapapers{
-        flex-direction: column;
-    }
-    .papers{
-        height: 1600px;
-    }
-    .dapapers div{
-        height: 600px;
-        width: 50%;
-        margin-left: 25%;
-        background-size: contain;
-    }
-    .dapapers .div2{
-        background-size: contain;
-        height: 600px;
-        width: 50%;
-        margin-left: 25%;
-        padding-bottom: 100px;
     }
     .FAQCONT div p{
         max-width: 100%;
@@ -683,13 +587,13 @@
     .partners .partnersCont svg, .partners .partnersCont img{
         width: 18%;
     }
-    .sectionTitleTextGrad{
+    .sectionTitleTextGrad {
         font-size: 35px;
     }
     .subText4{
         font-size: 13px;
     }
-    .sectionTitleText{
+    .sectionTitleText {
         font-size: 35px;
     }
     .subtext{
@@ -708,22 +612,6 @@
     }
     .offers h1{
         padding-bottom: 20px;
-    }
-    .ecosystem{
-        height: 300px;
-    }
-    .benchmark{
-        height: 1000px;
-    }
-    .perks{
-        padding-top: 250px;
-        height: 2800px;
-    }
-    .dapapers{
-        gap: 10px;
-    }
-    .papers{
-        height: 1400px;
     }
     .FAQCONT{
         width: 90%;
@@ -744,10 +632,9 @@
     }
     .sectionTitleText{
         font-size: 20px;
-        margin-bottom: 20px;
     }
     .subtext7{
-        width: 100%;
+        width: 85%;
         font-size: 15px;
     }
     .grid1{
@@ -760,9 +647,6 @@
     .card svg{
         margin-top: -150px;
     }
-    .benchmark{
-        background-size: 200%;
-    }
     .tableTop .greyBtn{
         font-size: 12px;
     }
@@ -771,16 +655,11 @@
     }
     .dapapers div{
         width: 90%;
-        margin-left: 5%;
         height: 50%;
     }
     .dapapers .div2{
         width: 90%;
-        margin-left: 5%;
         height: 50%;
-    }
-    .dapapers{
-        height: 840px;
     }
     .FAQCONT div p{
         font-size: 13px;
@@ -829,40 +708,34 @@
     }
 }
 
-
-
-
-
-
-
-    nav ul .icon {
+nav ul .icon {
     display: none;
     padding: 0;
 }
   
-  @media screen and (max-width: 650px) {
+@media screen and (max-width: 650px) {
     nav ul li:not(:first-child) {display: none;}
     nav ul li a.icon {
-      display: block;
+        display: block;
     }
     nav ul li[name="buttons"]{
         display: flex;
     }
     nav ul li[name="buttons"] a:not(:last-child) {display: none;}
-  }
-  
-  @media screen and (max-width: 650px) {
+}
+
+@media screen and (max-width: 650px) {
     nav ul.responsive {
         flex-direction: column;
-        height: 500px;
+        height: 300px;
         padding-top: 5%;
     }
     nav ul.responsive li[name="buttons"] a:not(:last-child) {display: block;}
 
     nav ul.responsive li {
-      display: block;
+        display: block;
     }
-  }
+}
 
 /* Ensure images scale correctly and maintain their shape */
 .gridBox img {

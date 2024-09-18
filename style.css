@@ -199,7 +199,7 @@ nav {
     backdrop-filter: blur(2px) !important;
     padding: 15px 30px !important;
     border: none !important;
-    width: 23% !important;
+    width: 240px !important;
     text-align: center;
 }
 
@@ -420,48 +420,51 @@ li a:active {
     width: 80%;
     margin-left: 10%;
     margin-top: 35px;
-
+    gap: 30px;
 }
-#partners .partnersCont
-    {  
-        width: 1600px;
-        gap: 30px;
-        animation-name: slide;
-        animation-duration: 8s;
-        animation-direction: normal;
-        animation-timing-function: ease;
-        animation-iteration-count: infinite;
-    }
-      @keyframes slide {
-        0% {
-          margin-left: 400px;
-        }
-        16.66% {
-            margin-left: 200px;
-        }
-        33.32% {
-            margin-left: 000px;
-        }
-        49.98% {
-            margin-left: -200px;
-        }
-        66.64% {
-            margin-left: -400px;
-        }
-        83.30% {
-            margin-left: -600px;
-        }
-        100% {
-            margin-left: 400px;
-        }
-      }
-    .partners{
-        overflow: hidden;
-    }
 
-    .partnersCont svg{
-        width: 15%;
+#partners .partnersCont
+{  
+    width: 1600px;
+    gap: 30px;
+    animation-name: slide;
+    animation-duration: 8s;
+    animation-direction: normal;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slide {
+    0% {
+        margin-left: 400px;
     }
+    16.66% {
+        margin-left: 200px;
+    }
+    33.32% {
+        margin-left: 000px;
+    }
+    49.98% {
+        margin-left: -200px;
+    }
+    66.64% {
+        margin-left: -400px;
+    }
+    83.30% {
+        margin-left: -600px;
+    }
+    100% {
+        margin-left: 400px;
+    }
+}
+
+.partners{
+    overflow: hidden;
+}
+
+.partnersCont svg{
+    width: 15%;
+}
 
 .gradiantText {
     text-align: center;
@@ -480,12 +483,11 @@ li a:active {
 
 .service {
     background-color: #071125;
-    height: 2100px;
     background-image: url(img/line.svg), url(img/line2.svg);
     background-size: 17%, 17%;
     background-repeat: no-repeat, no-repeat;
     background-position: top right, top left;
-    padding-top: 120px;
+    padding: 120px 0px 80px 0px;
 }
 
 .sectionHeader {
@@ -522,7 +524,6 @@ li a:active {
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
-    height: 700px;
     margin-bottom: 80px;
 }
 
@@ -546,47 +547,50 @@ li a:active {
 }
 
 .gridItem1 {
+    min-width: 0px;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     grid-area: one;
+    padding: 15px;
 }
 
 .gridItem2 {
+    min-width: 0px;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    align-items: start;
-    padding-left: 50px;
-    padding-right: 50px;
     justify-content: center;
+    align-items: center;
     overflow: hidden;
     grid-area: two;
+    padding: 15px;
 }
 
 .gridItem3 {
+    min-width: 0px;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     grid-area: three;
+    padding: 15px;
 }
 
 .gridItem2 img {
-    width: 100%;
-    margin-bottom: 10px;
+    padding-top: 15px;
+    max-width: 100%; 
+    max-height: 100%; 
+    object-fit: contain;
 }
 
 .cardCont {
     width: 90%;
-    height: 430px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 20px;
@@ -723,7 +727,6 @@ td[name="grad2"] {
 
 .ecosystem {
     width: 100%;
-    height: 500px;
     background-color: #071125;
 }
 
@@ -743,8 +746,8 @@ td[name="grad2"] {
 
 .metrics {
     width: 100%;
-    height: 850px;
     background-color: #071125;
+    padding-top: 100px;
 }
 
 .hide{
@@ -799,25 +802,21 @@ td[name="grad2"] {
   } */
 
 .infoCont {
-    padding-top: 150px;
-    grid-area: info;
     display: flex;
     align-items: center;
     flex-wrap: wrap-reverse;
     justify-content: center;
-    gap: 5%;
-    max-width: 1200px;
-    width: 100%;
+    gap: 30px;
+    width: 70%;
+    margin-left: 15%;
 }
 
 .infoSquare {
-    flex: 1 1 200px;
-    max-width: 300px;
+    width: 280px;
     border: double 3px transparent;
     background-image: linear-gradient(169.18deg, #01081a, rgb(4, 14, 37)), radial-gradient(circle at top, #D2EEFF -19.31%, #5CBDFF 8.35%, #528EFC 40.93%, #8B94F3 66.13%, #A08FCE 98.71%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
-    width: 22%;
     height: 70%;
     border-radius: 15px;
     display: flex;
@@ -857,13 +856,19 @@ td[name="grad2"] {
 .benchmark {
     padding-top: 5%;
     width: 100%;
-    height: 1000px;
     background-color: #071125;
     background-image: url(img/benchmark.png);
     background-position: top;
     background-repeat: no-repeat;
     background-size: 100%;
 }
+
+@media only screen and (max-width: 1200px) {
+    .benchmark {
+        background-size: auto;
+    }
+}
+
 
 .leaderboardTable {
     width: 80%;
@@ -1003,8 +1008,8 @@ td[name="grad2"] {
 }
 
 .perks {
+    padding: 100px 0px 100px 0px;
     width: 100%;
-    height: 1200px;
     background-color: #071125;
 }
 
@@ -1016,7 +1021,7 @@ td[name="grad2"] {
         'one two three'
         'four five six'
     ;
-    row-gap: 30px;
+    row-gap: 80px;
 }
 
 .one {
@@ -1051,7 +1056,6 @@ td[name="grad2"] {
     background-origin: border-box;
     background-clip: padding-box, border-box;
     border-radius: 25px;
-    height: 375px;
     width: 80%;
     margin-left: 10%;
     display: flex;
@@ -1103,8 +1107,8 @@ td[name="grad2"] {
 
 .papers {
     width: 100%;
-    height: 1000px;
     background-color: #071125;
+    padding: 100px;
 }
 
 .papersCont {
@@ -1113,29 +1117,37 @@ td[name="grad2"] {
     height: 90%;
     display: grid;
     grid-template-areas:
-        'text btns btns btns'
+        'text'
+        'btns btns'
     ;
     justify-content: center;
     align-items: center;
 }
 
 .dapapers {
-    grid-template-areas: btns;
     display: flex;
-    gap: 25px;
+    gap: 50px;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-left: 10%;
 }
 
 .dapapers div {
-    height: 700px;
-    width: 460px;
+    width: 45%;
+    min-width: 300px;
     background-image: url('img/Group 1000002427.png');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 150px 0px 150px 0px;
+    border-radius: 25px;
 }
 
 
@@ -1144,10 +1156,8 @@ td[name="grad2"] {
 }
 
 .dapapers .div2 {
-    height: 700px;
-    width: 460px;
     background-image: url('img/Group 1000002426.png');
-    background-size: contain;
+    //background-size: auto;
     background-repeat: no-repeat;
 }
 
@@ -1155,9 +1165,9 @@ td[name="grad2"] {
 .transBtn {
     border: rgba(255, 255, 255, 0.616) 1px solid;
     display: flex;
-    width: 260px;
-    height: 100px;
-    padding: 36px 0px;
+    width: 70%;
+    max-height: 25%;
+    padding: 10px 0px;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
@@ -1169,7 +1179,6 @@ td[name="grad2"] {
     font-style: normal;
     font-weight: 600;
     line-height: 30px;
-    /* 136.364% */
     letter-spacing: -0.22px;
     text-decoration: none;
     background: linear-gradient(85deg, rgba(210, 238, 255, 0.20) 0%, rgba(92, 189, 255, 0.20) 23.44%, rgba(82, 142, 252, 0.20) 51.04%, rgba(139, 148, 243, 0.20) 72.40%, rgba(160, 143, 206, 0.20) 100%);
@@ -1318,8 +1327,8 @@ td[name="grad2"] {
 
 .email {
     width: 100%;
-    height: 450px;
     background-color: #071125;
+    padding-bottom: 100px;
 }
 
 .sectionTitleEmail {
@@ -1337,7 +1346,6 @@ td[name="grad2"] {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 
 .email form {
     margin-top: 3%;
@@ -1368,7 +1376,6 @@ td[name="grad2"] {
 .emailSubmit {
     border-radius: 0px 6px 6px 0px;
     background: linear-gradient(90deg, #D2EEFF 0%, #5CBDFF 23.44%, #528EFC 51.04%, #8B94F3 72.40%, #A08FCE 100%);
-    width: 5%;
     border: 1px solid #DAE0E6;
     padding: 10px;
     height: 50px;
@@ -1378,16 +1385,16 @@ td[name="grad2"] {
     font-style: normal;
     font-weight: 600;
     line-height: 22px;
-    /* 146.667% */
 }
 
 .guarantee {
-    margin-top: 2%;
+    padding: 20px 10px 0px 10px;
     width: 40%;
     margin-left: 30%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    gap: 30px;
 }
 
 .guarantee p {
@@ -1397,7 +1404,6 @@ td[name="grad2"] {
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
-    /* 150% */
     letter-spacing: -0.1px;
 }
 
@@ -1508,7 +1514,6 @@ footer {
     font-style: normal;
     font-weight: 700;
     line-height: 125%;
-    /* 65px */
     letter-spacing: -1.04px;
     background: var(--linear-nice, linear-gradient(90deg, #D2EEFF 0%, #5CBDFF 23.44%, #528EFC 51.04%, #8B94F3 72.40%, #A08FCE 100%));
     background-clip: text;
@@ -1520,11 +1525,10 @@ footer {
     width: 75%;
     text-align: left;
     font-family: Montserrat;
-    font-size: 52px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 700;
     line-height: 125%;
-    /* 65px */
     letter-spacing: -1.04px;
     color: white;
 }
@@ -1535,7 +1539,6 @@ footer {
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
-    /* 70px */
     letter-spacing: -0.7px;
     background: var(--linear-colorfull, linear-gradient(85deg, #D2EEFF 0%, #5CBDFF 23.44%, #528EFC 41.04%, #8B94F3 62.40%, #A08FCE 85%));
     background-clip: text;
@@ -1549,7 +1552,6 @@ footer {
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
-    /* 80px */
     letter-spacing: -0.8px;
 }
 
@@ -1564,13 +1566,13 @@ footer {
 
 .subtext7{
     color: #FFF;
-font-family: Montserrat;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 26px; /* 144.444% */
-letter-spacing: -0.1px;
-width: 45%;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 144.444% */
+    letter-spacing: -0.1px;
+    width: 45%;
 }
 
 .subtext6 {
@@ -1632,7 +1634,7 @@ width: 45%;
 
 .subTitle {
     padding-left: 3.5px;
-    color: #FFF;
+    color: white;
     font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
