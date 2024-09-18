@@ -514,9 +514,6 @@
         width: 1500px;
         margin-right: 5%;
     }
-    .benchmark{
-        height: 1200px;
-    }
     .daPerks{
         grid-template-areas: 
         'one'
@@ -640,10 +637,6 @@
     .offers h1{
         padding-bottom: 20px;
     }
-
-    .benchmark{
-        height: 1000px;
-    }
     .dapapers{
         gap: 10px;
     }
@@ -683,9 +676,6 @@
     }
     .card svg{
         margin-top: -150px;
-    }
-    .benchmark{
-        background-size: 200%;
     }
     .tableTop .greyBtn{
         font-size: 12px;
