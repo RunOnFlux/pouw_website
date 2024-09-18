@@ -279,7 +279,6 @@ li a:active {
 }
 .gridItem2{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items:start;
     padding-left: 50px;
@@ -1150,7 +1149,6 @@ footer{
     font-style: normal;
     font-weight: 700;
     line-height: 125%;
-    /* 65px */
     letter-spacing: -1.04px;
     background: var(--linear-nice, linear-gradient(90deg, #D2EEFF 0%, #5CBDFF 23.44%, #528EFC 51.04%, #8B94F3 72.40%, #A08FCE 100%));
     background-clip: text;
@@ -1177,7 +1175,6 @@ footer{
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
-    /* 70px */
     letter-spacing: -0.7px;
     background: var(--linear-colorfull, linear-gradient(85deg, #D2EEFF 0%, #5CBDFF 23.44%, #528EFC 41.04%, #8B94F3 62.40%, #A08FCE 85%));
     background-clip: text;
@@ -1233,7 +1230,8 @@ footer{
 
 .subTitle {
     padding-left: 3.5px;
-    color: black;    font-family: Montserrat;
+    color: black;
+    font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
