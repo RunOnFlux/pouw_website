@@ -303,9 +303,6 @@
         margin-left: 10px;
         margin-right: 10px;
     }
-    .ecosystem{
-        height: 390px !important;
-    }
     .infoSquare{
         width: 70% !important;
         height: auto !important;
@@ -397,18 +394,8 @@
     }
 }
 
-@media only screen and (max-width: 1000px) {
-    .headerleft{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .rectangle{
-        margin-bottom: 30px;
-        margin-top: 30px;
-    }
-    .partnersCont
-    {  
+@media only screen and (max-width: 1450px) {
+    .partnersCont {  
         width: 800px;
         animation-name: slide;
         animation-duration: 8s;
@@ -416,9 +403,9 @@
         animation-timing-function: ease;
         animation-iteration-count: infinite;
     }
-      @keyframes slide {
+    @keyframes slide {
         0% {
-          margin-left: 150px;
+            margin-left: 150px;
         }
         16.66% {
             margin-left: 000px;
@@ -438,13 +425,24 @@
         100% {
             margin-left: 150px;
         }
-      }
+    }
     .partners{
         overflow: hidden;
     }
-
     .partnersCont svg{
         width: 15%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .headerleft{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .rectangle{
+        margin-bottom: 30px;
+        margin-top: 30px;
     }
     .sectionTitleTextGrad{
         font-size: 40px;
@@ -671,9 +669,7 @@
     .offers h1{
         padding-bottom: 20px;
     }
-    .ecosystem{
-        height: 300px;
-    }
+
     .benchmark{
         height: 1000px;
     }
