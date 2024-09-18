@@ -8,62 +8,8 @@ function myFunction() {
   }
 
 function dropdownFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
+    document.getElementById("myDropdown").classList.toggle("show");
 }
-
-// document.addEventListener("DOMContentLoaded", function() {
-//     const exitButton = document.getElementById("cancelButton");
-//     const closeButton = document.getElementById("closeButton");
-//     const overlay = document.getElementById("overlay");
-//     const countdownTimer = document.getElementById("countdowntimer");
-//     const daysElement = document.getElementById("days");
-//     const hoursElement = document.getElementById("hours");
-//     const minutesElement = document.getElementById("minutes");
-//     const secondsElement = document.getElementById("seconds");
-//     const countdownElement = document.getElementById("countdown");
-//     const countdowndisplayElement = document.getElementById("countdowndisplay");
-
-//     function closeOverlay() {
-//         overlay.style.display = "none";
-//     }
-
-//     exitButton.addEventListener("click", closeOverlay);
-//     closeButton.addEventListener("click", closeOverlay);
-
-//     function startCountdown(endDate) {
-//         let timer = setInterval(function() {
-//             let now = new Date().getTime();
-//             let distance = endDate - now;
-
-//             if (distance < 0) {
-//                 clearInterval(timer);
-//                 daysElement.innerText = 0;
-//                 hoursElement.innerText = 0;
-//                 minutesElement.innerText = 0;
-//                 secondsElement.innerText = 0;
-//                 countdownTimer.style.display = "none";
-//                 const availableNowMessage = document.createElement("div");
-//                 availableNowMessage.className = 'available-now';
-//                 availableNowMessage.innerText = "Available Now";
-//                 countdowndisplayElement.appendChild(availableNowMessage);
-//                 return;
-//             }
-
-//             let days = Math.floor(distance / (1000 * 60 * 60 * 24));
-//             let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-//             let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-//             let seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-//             daysElement.innerText = days;
-//             hoursElement.innerText = hours;
-//             minutesElement.innerText = minutes;
-//             secondsElement.innerText = seconds;
-//         }, 1000);
-//     }
-
-//     let countdownDate = new Date("June 26, 2024 6:00:00 UTC").getTime();
-//     startCountdown(countdownDate);
-// });
 
 function showFaq(number){
     if(number == 1){
@@ -129,11 +75,9 @@ function showFaq(number){
     }
 }
 
-// api url
-const api_url = 
-      "https://service.fluxcore.ai/api/getLeaderBoardStats";
+
+const api_url = "https://service.fluxcore.ai/api/getLeaderBoardStats";
  
-// Defining async function
 async function getapi(url) {
    
     // Storing response
@@ -144,39 +88,32 @@ async function getapi(url) {
     console.log(data);
     show(data);
 }
-// Calling that async function
-getapi(api_url);
+
+// getapi(api_url);
 
 function show(data){
-  let ram = document.getElementById("totalRam");
-  ram.innerHTML = Math.round(data.TotalRAM*100 / 1000 )/100+ " TB";
-  let cores = document.getElementById("totalCores");
-  cores.innerHTML = data.TotalCore;
-  let benchmarks = document.getElementById("benchmarks");
-  benchmarks.innerHTML = data.TotalBenchmark;
-  let cpu = document.getElementById("cpu");
-cpu.innerHTML = data.TotalGPU;
-let storage = document.getElementById("storage");
-storage.innerHTML = Math.round(data.TotalStorage*100 / 1000 )/100+ " TB";
+    let ram = document.getElementById("totalRam");
+    ram.innerHTML = (Math.round(data.TotalRAM * 100 / 1000 ) / 100).toFixed(0) + " TB";
+    let cores = document.getElementById("totalCores");
+    cores.innerHTML = data.TotalCore;
+    let benchmarks = document.getElementById("benchmarks");
+    benchmarks.innerHTML = data.TotalBenchmark;
+    let cpu = document.getElementById("cpu");
+    cpu.innerHTML = data.TotalGPU;
+    let storage = document.getElementById("storage");
+    storage.innerHTML = (Math.round(data.TotalStorage * 100 / 1000 ) / 100).toFixed(0)+ " TB";
 }
 
-// api url
-const api_url2 = 
-      "https://service.fluxcore.ai/api/getLeaderBoard?limit=61&skip=0";
+const api_url2 =  "https://service.fluxcore.ai/api/getLeaderBoard?limit=61&skip=0";
  
-// Defining async function
 async function getapi2(url) {
-   
-    // Storing response
     const response2 = await fetch(url);
-   
-    // Storing data in form of JSON
     var data = await response2.json();
     console.log(data);
     show2(data);
 }
-// Calling that async function
-getapi2(api_url2);
+
+// getapi2(api_url2);
 
 function show2(data) {
     let tab = 
@@ -246,20 +183,4 @@ function show2(data) {
     }
     // Setting innerHTML as tab variable
     document.getElementById("daTable").innerHTML = tab;
-}
-
-
-
-const api_url3 = 
-      "https://service.fluxcore.ai/api/getLeaderBoard?limit=61&skip=0";
- 
-// Defining async function
-async function getapi3(url) {
-   
-    // Storing response
-    const response3 = await fetch(url);
-   
-    // Storing data in form of JSON
-    var data = await response3.json();
-    show3(data);
 }

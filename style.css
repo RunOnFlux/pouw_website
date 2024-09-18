@@ -480,12 +480,11 @@ li a:active {
 
 .service {
     background-color: #071125;
-    height: 2100px;
     background-image: url(img/line.svg), url(img/line2.svg);
     background-size: 17%, 17%;
     background-repeat: no-repeat, no-repeat;
     background-position: top right, top left;
-    padding-top: 120px;
+    padding: 120px 0px 80px 0px;
 }
 
 .sectionHeader {
@@ -552,6 +551,7 @@ li a:active {
     justify-content: center;
     overflow: hidden;
     grid-area: one;
+    padding: 15px;
 }
 
 .gridItem2 {
@@ -562,7 +562,7 @@ li a:active {
     align-items: center;
     overflow: hidden;
     grid-area: two;
-    padding-bottom: 15px;
+    padding: 15px;
 }
 
 .gridItem3 {
@@ -573,6 +573,7 @@ li a:active {
     justify-content: center;
     overflow: hidden;
     grid-area: three;
+    padding: 15px;
 }
 
 .gridItem2 img {
@@ -584,9 +585,9 @@ li a:active {
 
 .cardCont {
     width: 90%;
-    height: 430px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 20px;
@@ -1003,8 +1004,8 @@ td[name="grad2"] {
 }
 
 .perks {
+    padding: 100px 0px 100px 0px;
     width: 100%;
-    height: 1200px;
     background-color: #071125;
 }
 
@@ -1016,7 +1017,7 @@ td[name="grad2"] {
         'one two three'
         'four five six'
     ;
-    row-gap: 30px;
+    row-gap: 80px;
 }
 
 .one {
@@ -1051,7 +1052,6 @@ td[name="grad2"] {
     background-origin: border-box;
     background-clip: padding-box, border-box;
     border-radius: 25px;
-    height: 375px;
     width: 80%;
     margin-left: 10%;
     display: flex;

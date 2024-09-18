@@ -78,9 +78,6 @@
         'two'
         ;
     }
-    .grid1 div {
-        min-height:200px;
-    }
     .gridItem2 img {
         width: auto;
     }
@@ -93,15 +90,13 @@
         'three four'
         'five six'
         ;
+        row-gap: 30px;
     }
     .two{
         margin-top: 0;
     }
     .five{
         margin-top: 0;
-    }
-    .perks{
-        height: 1500px;
     }
 }
 
@@ -289,9 +284,6 @@
         width: 85% !important;
         padding-bottom: 10px;
     }
-    .service{
-        height: 3216px !important;
-    }
     .footerTop div{
         text-align: left;
 
@@ -310,9 +302,6 @@
     .partnersCont img{
         margin-left: 10px;
         margin-right: 10px;
-    }
-    .cardCont{
-        height: 2000px !important;
     }
     .ecosystem{
         height: 390px !important;
@@ -473,39 +462,23 @@
         'two'
         'two'
         ;
-        height: 1200px;
         width: 90%;
         margin-left: 5%;
         margin-right: 5%;
     }
     .gridItem2{
-        align-items: start;
-        padding: 0;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding: 15px;
     }
     .gridItem1{
-        align-items: start;
         padding-left: 15px;
         padding-right: 15px;
-        padding: 15px;
     }
     .gridItem3{
-        align-items: start;
-        padding: 15px;
         padding-left: 15px;
         padding-right: 15px;
     }
     .gridItem2 img{
         width: auto;
-    }
-    .service{
-        height: 2600px;
-    }
-    .cardCont{
-        flex-direction: column;
-        flex-wrap: wrap;
-        height: 1100px;
     }
     .card{
         display: flex;
@@ -584,9 +557,6 @@
         'five'
         'six'
         ;
-    }
-    .perks{
-        height: 2800px;
     }
     .two{
         margin-top: 0;
@@ -707,10 +677,6 @@
     .benchmark{
         height: 1000px;
     }
-    .perks{
-        padding-top: 250px;
-        height: 2800px;
-    }
     .dapapers{
         gap: 10px;
     }
@@ -736,7 +702,6 @@
     }
     .sectionTitleText{
         font-size: 20px;
-        margin-bottom: 20px;
     }
     .subtext7{
         width: 85%;
