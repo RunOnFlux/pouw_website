@@ -727,7 +727,7 @@ nav ul .icon {
 @media screen and (max-width: 650px) {
     nav ul.responsive {
         flex-direction: column;
-        height: 500px;
+        height: 300px;
         padding-top: 5%;
     }
     nav ul.responsive li[name="buttons"] a:not(:last-child) {display: block;}

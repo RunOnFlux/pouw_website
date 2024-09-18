@@ -5,7 +5,7 @@ function myFunction() {
     } else {
       x.className = "myNav";
     }
-  }
+}
 
 function dropdownFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
