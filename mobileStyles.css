@@ -36,9 +36,6 @@
     .emailSubmit{
         width: 10%;
     }
-    .infoSquare{
-        width: 45%;
-    }
 }
 
 @media only screen and (max-width: 1300px) {
@@ -210,9 +207,6 @@
     .sliders{
         height: 2300px;
     }
-    .infoSquare{
-        width: 80% !important;
-    }
     .subtext7 {
         width: 85%;
         font-size: 15px;
@@ -302,19 +296,6 @@
     .partnersCont img{
         margin-left: 10px;
         margin-right: 10px;
-    }
-    .infoSquare{
-        width: 70% !important;
-        height: auto !important;
-        padding: 0;
-        margin-bottom: 5%;
-    }
-    .infoCont{
-        padding-top: 0px;
-    }
-    .metrics{
-        padding-top: 5%;
-        height: 1300px !important;
     }
     .subText4{
         width: 100% !important;
@@ -525,16 +506,6 @@
     .imgCont{
         text-align: center;
         margin-right: -80px;
-    }
-    .infoCont{
-        flex-wrap: wrap;
-        gap: 2%;
-    }
-    .infoSquare{
-        height: 50%;
-    }
-    .metrics{
-        height: 1200px;
     }
     .tableBottom{
         overflow-x: scroll;
