@@ -318,13 +318,8 @@
     }
 
     .transBtn{
-        width: 150px;
-        height: 50px;
         padding: 0;
         font-size: 20px;
-    }
-    .papers{
-        height: 1200px !important;
     }
     .titleTextGradiant {
         font-size: 30px !important;
@@ -544,25 +539,6 @@
     .sectionHeader2 .subText4{
         text-align: center;
     }
-    .dapapers{
-        flex-direction: column;
-    }
-    .papers{
-        height: 1600px;
-    }
-    .dapapers div{
-        height: 600px;
-        width: 50%;
-        margin-left: 25%;
-        background-size: contain;
-    }
-    .dapapers .div2{
-        background-size: contain;
-        height: 600px;
-        width: 50%;
-        margin-left: 25%;
-        padding-bottom: 100px;
-    }
     .FAQCONT div p{
         max-width: 100%;
     }
@@ -637,12 +613,6 @@
     .offers h1{
         padding-bottom: 20px;
     }
-    .dapapers{
-        gap: 10px;
-    }
-    .papers{
-        height: 1400px;
-    }
     .FAQCONT{
         width: 90%;
         margin-left: 5%;
@@ -685,16 +655,11 @@
     }
     .dapapers div{
         width: 90%;
-        margin-left: 5%;
         height: 50%;
     }
     .dapapers .div2{
         width: 90%;
-        margin-left: 5%;
         height: 50%;
-    }
-    .dapapers{
-        height: 840px;
     }
     .FAQCONT div p{
         font-size: 13px;
