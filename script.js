@@ -89,7 +89,7 @@ async function getapi(url) {
     show(data);
 }
 
-// getapi(api_url);
+getapi(api_url);
 
 function show(data){
     let ram = document.getElementById("totalRam");
@@ -113,7 +113,7 @@ async function getapi2(url) {
     show2(data);
 }
 
-// getapi2(api_url2);
+getapi2(api_url2);
 
 function show2(data) {
     let tab = 

@@ -1037,6 +1037,7 @@ li a:active {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    gap: 5px;
 }
 
 .guarantee p{
