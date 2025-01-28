@@ -1,186 +1,155 @@
-function myFunction() {
-    var x = document.getElementById("myNav");
-    if (x.className === "myNav") {
-      x.className += " responsive";
-    } else {
-      x.className = "myNav";
+document.addEventListener("DOMContentLoaded", async function () {
+    // Fetch and display GPU rental cards
+    console.log("DOM fully loaded. Running scripts...");
+    await loadGpuCards();
+    await loadLeaderboardStats();
+    await loadLeaderboard();
+});
+
+// --------------------------------------
+// FETCH GPU RENTAL DATA AND DISPLAY CARDS
+// --------------------------------------
+async function loadGpuCards() {
+    console.log("Fetching GPU data...");
+
+    const gpuContainer = document.getElementById("gpuContainer");
+    if (!gpuContainer) {
+        console.error("Error: gpuContainer not found!");
+        return;
     }
+
+    try {
+        // Fetch data from API
+        const response = await fetch("https://service.fluxcore.ai/api/getGPUPrices");
+        if (!response.ok) throw new Error(`HTTP Error: ${response.status}`);
+
+        const gpuData = await response.json();
+        console.log("GPU data loaded:", gpuData);
+
+        // Sort GPUs by number_of_gpus in descending order and take the top 4
+        const topGpus = gpuData
+            .sort((a, b) => b.number_of_gpus - a.number_of_gpus)
+            .slice(0, 8);
+
+        // Clear previous content (if any)
+        gpuContainer.innerHTML = "";
+
+        // Create and append GPU cards dynamically
+        topGpus.forEach(gpu => {
+            const card = document.createElement("div");
+            card.classList.add("gpu-card", "gradientBorder");
+
+            // Format median_price to two decimal places
+            const formattedPrice = gpu.avg_price.toFixed(2);
+
+            // Using median_price for pricing
+            card.innerHTML = `
+                <h2 class="sectionGPUTitleTextGrad">${gpu.short_name}</h2>
+                <p>${gpu.number_of_gpus} Available<br>Starting at $${formattedPrice} / h</p>
+        <a href="https://alpha.fluxedge.ai/" target="_blank" class="rent-btn gradientBorder">Rent Now</a>            `;
+
+            gpuContainer.appendChild(card);
+        });
+
+        console.log("GPU cards appended to container.");
+    } catch (error) {
+        console.error("Failed to load GPU rental data:", error);
+    }
+}
+
+// --------------------------------------
+// FETCH AND DISPLAY LEADERBOARD STATS
+// --------------------------------------
+async function loadLeaderboardStats() {
+    const apiUrl = "https://service.fluxcore.ai/api/getLeaderBoardStats";
+
+    try {
+        const response = await fetch(apiUrl);
+        if (!response.ok) throw new Error(`HTTP Error: ${response.status}`);
+        
+        const data = await response.json();
+        console.log("Leaderboard Stats:", data);
+
+        document.getElementById("totalRam").innerText = Math.floor(data.TotalRAM / 1000) + " TB";
+        document.getElementById("totalCores").innerText = data.TotalCore;
+        document.getElementById("benchmarks").innerText = data.TotalBenchmark;
+        document.getElementById("cpu").innerText = data.TotalGPU;
+        document.getElementById("storage").innerText = Math.floor(data.TotalStorage / 1000) + " TB";
+    } catch (error) {
+        console.error("Failed to load leaderboard stats:", error);
+    }
+}
+
+// --------------------------------------
+// FETCH AND DISPLAY LEADERBOARD TABLE
+// --------------------------------------
+async function loadLeaderboard() {
+    const apiUrl = "https://service.fluxcore.ai/api/getLeaderBoard?limit=61&skip=0";
+
+    try {
+        const response = await fetch(apiUrl);
+        if (!response.ok) throw new Error(`HTTP Error: ${response.status}`);
+        
+        const data = await response.json();
+        console.log("Leaderboard Data:", data);
+
+        let tableContent = `
+            <tr>
+                <th class="roundtbl">Rank</th>
+                <th>Provider</th>
+                <th>Motherboard</th>
+                <th>CPU</th>
+                <th>GPU</th>
+                <th>Memory</th>
+                <th>Disk</th>
+                <th class="roundtbr">Score</th>
+            </tr>`;
+
+        // Limit to 5 entries for performance
+        data.slice(0, 5).forEach(r => {
+            tableContent += `
+                <tr>
+                    <td>${r.Rank}</td>
+                    <td>${r.Computer.Name}</td>
+                    <td>${r.Computer.motherboard.model}</td>
+                    <td>${r.Computer.cpus[0].model} (${r.Computer.cpus[0].num_cores} Cores)</td>
+                    <td>${r.Computer.gpus[0].model}</td>
+                    <td>${Math.floor(r.Computer.TotalMemory / 1024)} GB</td>
+                    <td>${r.Computer.storages[0].model}</td>
+                    <td>${Math.floor(r.Score)}</td>
+                </tr>`;
+        });
+
+        document.getElementById("daTable").innerHTML = tableContent;
+    } catch (error) {
+        console.error("Failed to load leaderboard data:", error);
+    }
+}
+
+// --------------------------------------
+// NAVIGATION & FAQ FUNCTIONS (OPTIMIZED)
+// --------------------------------------
+function toggleClass(elementId, className) {
+    document.getElementById(elementId)?.classList.toggle(className);
+}
+
+function myFunction() {
+    toggleClass("myNav", "responsive");
 }
 
 function dropdownFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
+    toggleClass("myDropdown", "show");
 }
 
-function showFaq(number){
-    if(number == 1){
-        if(document.getElementById("faq1").classList.contains("show")){
-            document.getElementById("faq1").classList.remove("show");
-            document.getElementById("faq1").classList.add("hide");
-            document.getElementById("faqbtn1").classList.add("openFaq");
-            document.getElementById("faqbtn1").classList.remove("closeFaq");
-        }else{
-            document.getElementById("faq1").classList.add("show");
-            document.getElementById("faq1").classList.remove("hide");
-            document.getElementById("faqbtn1").classList.remove("openFaq");
-            document.getElementById("faqbtn1").classList.add("closeFaq");
-        }
-    }else if(number == 2){
-        if(document.getElementById("faq2").classList.contains("show")){
-            document.getElementById("faq2").classList.remove("show");
-            document.getElementById("faq2").classList.add("hide");
-            document.getElementById("faqbtn2").classList.add("openFaq");
-            document.getElementById("faqbtn2").classList.remove("closeFaq"); 
-        }else{
-            document.getElementById("faq2").classList.add("show");
-            document.getElementById("faq2").classList.remove("hide");
-            document.getElementById("faqbtn2").classList.remove("openFaq");
-            document.getElementById("faqbtn2").classList.add("closeFaq");
-        }
-    }else if(number == 3){
-        if(document.getElementById("faq3").classList.contains("show")){
-            document.getElementById("faq3").classList.remove("show");
-            document.getElementById("faq3").classList.add("hide");
-            document.getElementById("faqbtn3").classList.add("openFaq");
-            document.getElementById("faqbtn3").classList.remove("closeFaq");
-        }else{
-            document.getElementById("faq3").classList.add("show");
-            document.getElementById("faq3").classList.remove("hide");
-            document.getElementById("faqbtn3").classList.remove("openFaq");
-            document.getElementById("faqbtn3").classList.add("closeFaq");
-        }
-    }else if(number == 4){
-        if(document.getElementById("faq4").classList.contains("show")){
-            document.getElementById("faq4").classList.remove("show");
-            document.getElementById("faq4").classList.add("hide");
-            document.getElementById("faqbtn4").classList.add("openFaq");
-            document.getElementById("faqbtn4").classList.remove("closeFaq");
-        }else{
-            document.getElementById("faq4").classList.add("show");
-            document.getElementById("faq4").classList.remove("hide");
-            document.getElementById("faqbtn4").classList.remove("openFaq");
-            document.getElementById("faqbtn4").classList.add("closeFaq");
-        }
-    }else if(number == 5){
-        if(document.getElementById("faq5").classList.contains("show")){
-            document.getElementById("faq5").classList.remove("show");
-            document.getElementById("faq5").classList.add("hide");
-            document.getElementById("faqbtn5").classList.add("openFaq");
-            document.getElementById("faqbtn5").classList.remove("closeFaq");
-        }else{
-            document.getElementById("faq5").classList.add("show");
-            document.getElementById("faq5").classList.remove("hide");
-            document.getElementById("faqbtn5").classList.remove("openFaq");
-            document.getElementById("faqbtn5").classList.add("closeFaq");
-        }
+function showFaq(number) {
+    const faq = document.getElementById(`faq${number}`);
+    const button = document.getElementById(`faqbtn${number}`);
+
+    if (faq?.classList.contains("show")) {
+        faq.classList.replace("show", "hide");
+        button.classList.replace("closeFaq", "openFaq");
+    } else {
+        faq?.classList.replace("hide", "show");
+        button.classList.replace("openFaq", "closeFaq");
     }
-}
-
-
-const api_url = "https://service.fluxcore.ai/api/getLeaderBoardStats";
- 
-async function getapi(url) {
-   
-    // Storing response
-    const response = await fetch(url);
-   
-    // Storing data in form of JSON
-    var data = await response.json();
-    console.log(data);
-    show(data);
-}
-
-getapi(api_url);
-
-function show(data){
-    let ram = document.getElementById("totalRam");
-    ram.innerHTML = (Math.round(data.TotalRAM * 100 / 1000 ) / 100).toFixed(0) + " TB";
-    let cores = document.getElementById("totalCores");
-    cores.innerHTML = data.TotalCore;
-    let benchmarks = document.getElementById("benchmarks");
-    benchmarks.innerHTML = data.TotalBenchmark;
-    let cpu = document.getElementById("cpu");
-    cpu.innerHTML = data.TotalGPU;
-    let storage = document.getElementById("storage");
-    storage.innerHTML = (Math.round(data.TotalStorage * 100 / 1000 ) / 100).toFixed(0)+ " TB";
-}
-
-const api_url2 =  "https://service.fluxcore.ai/api/getLeaderBoard?limit=61&skip=0";
- 
-async function getapi2(url) {
-    const response2 = await fetch(url);
-    var data = await response2.json();
-    console.log(data);
-    show2(data);
-}
-
-getapi2(api_url2);
-
-function show2(data) {
-    let tab = 
-        `<tr>
-        <th class="roundtbl">Rank</th>
-        <th>Provider <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
-                viewBox="0 0 17 17" fill="none">
-                <path
-                    d="M7.95616 11.3094C8.15412 11.5237 8.49275 11.5237 8.69071 11.3094L11.7051 8.04631C12.0009 7.72607 11.7738 7.20703 11.3378 7.20703L5.30908 7.20703C4.87312 7.20703 4.64598 7.72607 4.94181 8.04631L7.95616 11.3094Z"
-                    fill="white" />
-            </svg></th>
-        <th>Motherboard</th>
-        <th>
-            CPU<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
-                fill="none">
-                <path
-                    d="M8.55968 11.3094C8.75764 11.5237 9.09627 11.5237 9.29423 11.3094L12.3086 8.04631C12.6044 7.72607 12.3773 7.20703 11.9413 7.20703L5.9126 7.20703C5.47663 7.20703 5.2495 7.72607 5.54532 8.04631L8.55968 11.3094Z"
-                    fill="white" />
-            </svg>
-        </th>
-        <th>GPU <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
-                fill="none">
-                <path
-                    d="M8.55968 11.3094C8.75764 11.5237 9.09627 11.5237 9.29423 11.3094L12.3086 8.04631C12.6044 7.72607 12.3773 7.20703 11.9413 7.20703L5.9126 7.20703C5.47663 7.20703 5.2495 7.72607 5.54532 8.04631L8.55968 11.3094Z"
-                    fill="white" />
-            </svg></th>
-        <th>Memory <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
-                viewBox="0 0 17 17" fill="none">
-                <path
-                    d="M8.55968 11.3094C8.75764 11.5237 9.09627 11.5237 9.29423 11.3094L12.3086 8.04631C12.6044 7.72607 12.3773 7.20703 11.9413 7.20703L5.9126 7.20703C5.47663 7.20703 5.2495 7.72607 5.54532 8.04631L8.55968 11.3094Z"
-                    fill="white" />
-            </svg></th>
-        <th>
-            Disk <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
-                fill="none">
-                <path
-                    d="M8.55968 11.3094C8.75764 11.5237 9.09627 11.5237 9.29423 11.3094L12.3086 8.04631C12.6044 7.72607 12.3773 7.20703 11.9413 7.20703L5.9126 7.20703C5.47663 7.20703 5.2495 7.72607 5.54532 8.04631L8.55968 11.3094Z"
-                    fill="white" />
-            </svg>
-        </th>
-        <th class="roundtbr">Score <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
-                viewBox="0 0 17 17" fill="none">
-                <path
-                    d="M8.55968 11.3094C8.75764 11.5237 9.09627 11.5237 9.29423 11.3094L12.3086 8.04631C12.6044 7.72607 12.3773 7.20703 11.9413 7.20703L5.9126 7.20703C5.47663 7.20703 5.2495 7.72607 5.54532 8.04631L8.55968 11.3094Z"
-                    fill="white" />
-            </svg></th>
-         </tr>`;
-
-    // Loop to access all rows 
-    for (let r of data) {
-        tab += `<tr> 
-    <td>${r.Rank} </td>
-    <td>${r.Computer.Name}</td>
-    <td>${r.Computer.motherboard.model}</td> 
-    <td>${r.Computer.cpus[0].model} <br>
-    <span class="span2">${r.Computer.cpus[0].num_cores} CORES</span>
-    </td> 
-    <td>${r.Computer.gpus[0].model}</td>
-    <td>${Math.round(r.Computer.TotalMemory * 100 / 1024 ) / 100+ " GB"}</td>
-    <td>${r.Computer.storages[0].manufacturer}</td>
-    <td>${r.Score}</td></tr>`
-    let numr = `${r.Rank}`;
-    if(numr == 5){
-      break;
-    };
-
-    }
-    // Setting innerHTML as tab variable
-    document.getElementById("daTable").innerHTML = tab;
 }

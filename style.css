@@ -1522,6 +1522,20 @@ footer {
     -webkit-text-fill-color: transparent;
 }
 
+.sectionGPUTitleTextGrad {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+    letter-spacing: -1.04px;
+    background: var(--linear-nice, linear-gradient(90deg, #D2EEFF 0%, #5CBDFF 23.44%, #528EFC 51.04%, #8B94F3 72.40%, #A08FCE 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .sectionTitleText {
     width: 75%;
     text-align: left;
@@ -2446,3 +2460,73 @@ footer {
     height: 30px;
     width: 30px;
 }
+
+.cardCont {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gpu-card {
+    position: relative;
+    background: url('img/gpubase.png') center/cover no-repeat;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    height: 350px; /* Ensures proper spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Title at top, button at bottom */
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    overflow: hidden;
+}
+
+/* Dark overlay to dim the background */
+.gpu-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65); /* Adjust transparency */
+    z-index: 1;
+    pointer-events: none; /* Ensure the overlay doesn't block clicks */
+}
+
+/* Ensure all text and buttons are clickable */
+.gpu-card h2, .gpu-card p, .gpu-card a {
+    position: relative;
+    z-index: 2;
+}
+
+.rent-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 25px;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    border: double 1.5px transparent; /* Gradient border */
+    background-color: rgba(3, 15, 42, 0.8); /* Semi-transparent background color */
+    background-image: radial-gradient(circle at top, #D2EEFF -19.31%, #5CBDFF 8.35%, #528EFC 40.93%, #8B94F3 66.13%, #A08FCE 98.71%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box; /* Ensures gradient border is visible */
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Hover effect for Rent Now button */
+.rent-btn:hover {
+    background: rgba(255, 255, 255, 0.2); /* Slight transparency */
+    color: white;
+}
+
+
