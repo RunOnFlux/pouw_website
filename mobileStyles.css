@@ -1,163 +1,170 @@
 @media only screen and (max-width: 1500px) {
-    .container .greyBtn{
+    .container .greyBtn {
         width: 230px;
     }
-    .container4{
+    .container4 {
         width: 80%;
         margin-left: 10%;
         margin-right: 10%;
     }
-    .scoreone{
+    .scoreone {
         flex: none;
     }
-    .scoretwo{
+    .scoretwo {
         flex: none;
     }
-    .scoresGrid{
+    .scoresGrid {
         width: 100%;
         margin: 0;
     }
 }
 
 @media only screen and (max-width: 1400px) {
-    .container .greyBtn{
+    .container .greyBtn {
         width: 200px;
     }
-    .papersCont{
+    .papersCont {
         grid-template-areas: 
-        'text'
-        'btns'
-        ;
+            'text'
+            'btns';
         align-items: center;
     }
-    .dapapers{
+    .dapapers {
         justify-content: center;
     }
-    .emailSubmit{
+    .emailSubmit {
         width: 10%;
     }
 }
 
 @media only screen and (max-width: 1300px) {
-    .container .greyBtn{
+    .container .greyBtn {
         width: 150px;
     }
-    .systemInfo{
+    .systemInfo {
         flex-wrap: wrap;
     }
 }
 
 @media only screen and (max-width: 1200px) {
-    .container2{
+    .container2 {
         overflow-x: scroll !important;
     }
-    .board1{
+    .board1 {
         width: 1300px;
     }
-
-    .table{
+    .table {
         overflow-x: scroll !important;
     }
-    .scoresGrid{
+    .scoresGrid {
         gap: 10px;
     }
-    .scoresGrid div div{
+    .scoresGrid div div {
         width: 300px;
     }
-    .scoresGrid div div h1{
+    .scoresGrid div div h1 {
         font-size: 30px;
     }
-    .grid1{
+    .grid1 {
         grid-template-areas:
-        'one'
-        'three'
-        'two'
-        'two'
-        ;
+            'one'
+            'three'
+            'two'
+            'two';
     }
     .gridItem2 img {
         width: auto;
     }
-    .grid1 .sectionTitleText{
+    .grid1 .sectionTitleText {
         font-size: 30px;
     }
-    .daPerks{
+    .daPerks {
         grid-template-areas: 
-        'one two'
-        'three four'
-        'five six'
-        ;
+            'one two'
+            'three four'
+            'five six';
         row-gap: 30px;
     }
-    .two{
+    .two {
         margin-top: 0;
     }
-    .five{
+    .five {
         margin-top: 0;
+    }
+
+    /* GPU cards */
+    .gpu-card {
+        width: 200px;
+        height: 300px;
+        padding: 15px;
+    }
+    .rent-btn {
+        padding: 6px 10px;
+        font-size: 0.9rem;
     }
 }
 
 @media only screen and (max-width: 1100px) {
-    .titleTextGradiant{
+    .titleTextGradiant {
         font-size: 52px;
         text-align: left;
     }
-    .subTitle{
+    .subTitle {
         font-size: 24px;
         text-align: left;
     }
-    .headerList ul li{
+    .headerList ul li {
         font-size: 15px;
     }
-    .header{
+    .header {
         padding-left: 5%;
         padding-top: 10%;
         text-align: left;
         width: 100%;
     }
-    .container3{
+    .container3 {
         width: 90%;
         margin-left: 5%;
         margin-top: 5%;
     }
-    .systemInfo{
+    .systemInfo {
         justify-content: space-evenly;
     }
-    .container{
+    .container {
         grid-template-areas: 
-        'one one'
-        'two two'
-        'three three'
-        'four four';
+            'one one'
+            'two two'
+            'three three'
+            'four four';
         height: 450px;
     }
-    .divTwo{
+    .divTwo {
         padding: 0;
         justify-content: center;
     }
-    .divThree{
+    .divThree {
         justify-content: center;
         padding: 0;
     }
-    .divFour{
+    .divFour {
         padding: 0;
         justify-content: center;
     }
-    .container4{
+    .container4 {
         width: 95%;
         margin-left: 2.5%;
     }
-    .leaderboardheader{
+    .leaderboardheader {
         height: 1400px;
     }
-    .leaderboardheader .subTitle{
+    .leaderboardheader .subTitle {
         text-align: center;
     }
-    .subtext6{
+    .subtext6 {
         width: 60%;
         margin-left: 20%;
     }
-    .gridtop div{
+    .gridtop div {
         flex-wrap: wrap;
         margin: 5%;
         margin-top: 1.5%;
@@ -166,45 +173,66 @@
         gap: 10px;
     }
 }
+
 @media only screen and (max-width: 900px) {
-    .scoresGrid{
+    .scoresGrid {
         padding-top: 5%;
     }
-    .systemInfo{
+    .systemInfo {
         gap: 10px;
     }
     .subtext7 {
         width: 75%;
     }
+
+    /* GPU cards */
+    .cardCont {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .gpu-card {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .gpu-card h2 {
+        font-size: 1.2rem;
+    }
+    .gpu-card p {
+        font-size: 0.9rem;
+    }
+    .rent-btn {
+        font-size: 0.8rem;
+        padding: 5px 8px;
+    }
 }
 
 @media only screen and (max-width: 800px) {
-    .scoresGrid div div{
+    .scoresGrid div div {
         height: 120px;
     }
-    .scoresGrid div div h1{
+    .scoresGrid div div h1 {
         font-size: 18px;
     }
-    .scoresGrid div div h2{
+    .scoresGrid div div h2 {
         font-size: 14px;
     }
-    .numberSelector{
+    .numberSelector {
         width: 70%;
         margin-left: 15%;
         margin-right: 15%;
     }
-    .gridtop{
+    .gridtop {
         height: 130px;
     }
-    .container4{
+    .container4 {
         grid-template-areas: 
-        'top'
-        'single'
-        'single2'
-        'tall1'
-        'tall2';
+            'top'
+            'single'
+            'single2'
+            'tall1'
+            'tall2';
     }
-    .sliders{
+    .sliders {
         height: 2300px;
     }
     .subtext7 {
@@ -213,590 +241,28 @@
     }
 }
 
-@media only screen and (max-width: 700px) {
-    .gridtop div{
-        margin-left: 1.5%;
-        margin-right: 1.5%;
-    }
-}
-
-@media only screen and (max-width: 650px) {
-    header {
-        background-position: 35%;
-    }
-    .leaderboardheader{
-        height: 1600px;
-    }
-    .scores{
-        height: 750px;
-    }
-    .leaderboardheader .titleTextGradiant{
-        font-size: 70px;
-    }
-    .subtext7 {
-        width: 85%;
-        font-size: 15px;
-    }
-}
-
 @media only screen and (max-width: 600px) {
-    .divFour{
+    .divFour {
         flex-wrap: wrap;
     }
-}
 
-
-@media only screen and (max-width: 500px) {
-    .btnFluxcore, .btnExtra{
-        width: 80% !important;
-        margin-right: 0px;
-        display: block;
-    }
-    header {
-        background-position: 25%;
-    }
-    .partnersCont{
-        margin-left: 0;
-    }
-    .partnersCont svg{
-        width: 30% !important;
-    }
-    .sectionHeader{
-        width: 90% !important;
-        margin-left: 5% !important;
-    }
-    .sectionHeader h1{
-        margin-bottom: 5%;
-    }
-    .btn{
-        padding: 5px 10px;
-        align-self: center;
-        text-align: center;
-        margin-right: 0px;
-    }
-    .card img{
-        width: 85% !important;
-        padding-bottom: 10px;
-    }
-    .footerTop div{
-        text-align: left;
-
-    }
-    .footer{
+    /* GPU cards */
+    .gpu-card {
         width: 100%;
-        margin-left: 0;
-    }
-    .card svg{
-        margin-top: -20% !important;
-    }
-    .card h3{
-        margin-left: 0;
-        align-self: center !important;
-    }
-    .partnersCont img{
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    .subText4{
-        width: 100% !important;
-        margin: 0 !important;
-        margin-bottom: 15% !important;
-    }
-    .tableTop{
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
-        gap: 15px;
-    }
-    .greyBtn{
-        margin-bottom: 5px;
-    }
-    .iconCont{
-        width: 100px;
-        height:100px;
-        margin-top: -50px;
-        margin-bottom: 0;
-    }
-
-    .transBtn{
-        padding: 0;
-        font-size: 20px;
-    }
-    .titleTextGradiant {
-        font-size: 30px !important;
-    }
-    .leaderboardheader {
-        font-size: 50px;
-    }
-    .headerleft{
-        width: 100% !important;
-        padding: 0;
-        padding-left: 4%;
-        margin: 0 !important;
-    }
-    .divOne{
-        padding: 0;
-        width: 70%;
-    }
-    .divTwo{
-        flex-wrap: wrap;
-        justify-content: start;
-    }
-    .divThree{
-        flex-wrap: wrap;
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
-    .container{
-        height: 600px;
-    }
-    .gridtop{
-        height: 200px;
-    }
-}
-
-/* Adjust styles for screens smaller than 650px */
-@media only screen and (max-width: 650px) {
-    .btnFluxcore2, .btnExtra {
-        display: block;
-        width: 100%;
-        text-align: center;
-        margin: 10px 0;
-    }
-    .btnExtra {
-        margin-top: 5px;
-    }
-    .titleTextGradiant{
-        font-size: 40px;
-    }
-}
-
-@media only screen and (max-width: 1450px) {
-    .partnersCont {  
-        width: 800px;
-        animation-name: slide;
-        animation-duration: 8s;
-        animation-direction: normal;
-        animation-timing-function: ease;
-        animation-iteration-count: infinite;
-    }
-    @keyframes slide {
-        0% {
-            margin-left: 150px;
-        }
-        16.66% {
-            margin-left: 000px;
-        }
-        33.32% {
-            margin-left: -150px;
-        }
-        49.98% {
-            margin-left: -300px;
-        }
-        66.64% {
-            margin-left: -450px;
-        }
-        83.30% {
-            margin-left: -700px;
-        }
-        100% {
-            margin-left: 150px;
-        }
-    }
-    .partners{
-        overflow: hidden;
-    }
-    .partnersCont svg{
-        width: 15%;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
-    .headerleft{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .rectangle{
-        margin-bottom: 30px;
-        margin-top: 30px;
-    }
-    .sectionTitleTextGrad{
-        font-size: 40px;
-    }
-    .subText4{
-        font-size: 15px;
-        width: 70%;
-        margin-left: 15%;
-        margin-right: 15%;
-    }
-    .grid1{
-        grid-template-areas: 
-        'one'
-        'three'
-        'two'
-        'two'
-        ;
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    .gridItem2{
-        padding: 15px;
-    }
-    .gridItem1{
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    .gridItem3{
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    .gridItem2 img{
-        width: auto;
-    }
-    .card{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-    .card img{
-        width: 35%;
-        align-self: flex-end;
-        margin: 0%;
-    }
-    .card svg{
-        margin-top: -190px;
-        width: 100%;
-        align-self:flex-end;
-    }
-    .card h3{
-        align-self: flex-start;
-        margin-left: 5%;
-    }
-    .card a{
-        align-self: flex-start;
-        margin-left: 5%;
-        margin-bottom: 2%;
-    }
-    .tableCont{
-        overflow-x: scroll;
         height: auto;
     }
-    .table1{
-        width: 120%;
-        margin: 5%;
-    }
-    .partnersCont img{
-        width: 10%;
-    }
-    .gridCont{
-        justify-content: center;
-        grid-template-areas: 
-        'img'
-        'info'
-        'info'
-        'info'
-        ;
-    }
-    .imgCont{
-        text-align: center;
-        margin-right: -80px;
-    }
-    .tableBottom{
-        overflow-x: scroll;
-    }
-    .tableBottom table{
-        width: 1500px;
-        margin-right: 5%;
-    }
-    .daPerks{
-        grid-template-areas: 
-        'one'
-        'two'
-        'three'
-        'four'
-        'five'
-        'six'
-        ;
-    }
-    .two{
-        margin-top: 0;
-    }
-    .five{
-        margin-top: 0;
-    }
-    .papersCont{
-        grid-template-areas: 
-        'text'
-        'btns'
-        'btns'
-        'btns'
-        ;
-    }
-    .sectionHeader2 .sectionTitleTextGrad{
-        text-align: center;
-    }
-    .sectionHeader2 .subText4{
-        text-align: center;
-    }
-    .FAQCONT div p{
-        max-width: 100%;
-    }
-    .FAQCONT span{
-        color: var(--dark-to-white-70, rgba(255, 255, 255, 0.70));
-    
-        /* Text md/Regular */
-        font-family: Inter;
-        font-size: 8px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 10px; /* 150% */
-        width: 100%;
-        display: block;
-    }
-    .sectionTitleEmail{
-        font-size: 25px;
-        text-align: center;
-        width: 90%;
-        margin-left: 5%;
-        margin-bottom: 5%;
-    }
-    .email form{
-        width: 90%;
-        margin-left: 5%;
-    }
-    .guarantee{
-        width: 100% !important;
-        margin-left: 0 !important;
-    }
-    .emailInput{
-        width:40%;
-    }
-    .emailSubmit{
-        width: 15%;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
-    .FAQ{
-        padding-top: 100px;
-        padding-bottom: 100px;
-        height: 800px;
-    }
-
-    .partners .partnersCont svg, .partners .partnersCont img{
-        width: 18%;
-    }
-    .sectionTitleTextGrad {
-        font-size: 35px;
-    }
-    .subText4{
-        font-size: 13px;
-    }
-    .sectionTitleText {
-        font-size: 35px;
-    }
-    .subtext{
-        font-size: 13px;
-    }
-    .card h3{
-        font-size: 25px;
-    }
-    .table1{
-        width: 1000px;
-    }
-    .offers{
-        background-size: auto;
-        height: 760px;
-        padding-top: 70px;
-    }
-    .offers h1{
-        padding-bottom: 20px;
-    }
-    .FAQCONT{
-        width: 90%;
-        margin-left: 5%;
-    }
-    .guarantee{
-        width: 60%;
-        margin-left: 20%;
-    }
-    footer{
-        height: 300px;
-    }
-}
-
-@media only screen and (max-width: 650px) {
-    .sectionTitleTextGrad{
-        font-size: 25px;
-    }
-    .sectionTitleText{
-        font-size: 20px;
-    }
-    .subtext7{
-        width: 85%;
-        font-size: 15px;
-    }
-    .grid1{
-        height: 1015px;
-    }
-    .subtext{
-        line-height: 20px !important;
-        font-weight: 300;
-    }
-    .card svg{
-        margin-top: -150px;
-    }
-    .tableTop .greyBtn{
-        font-size: 12px;
-    }
-    .btn2{
-        font-size: 16px;
-    }
-    .dapapers div{
-        width: 90%;
-        height: 50%;
-    }
-    .dapapers .div2{
-        width: 90%;
-        height: 50%;
-    }
-    .FAQCONT div p{
-        font-size: 13px;
-    }
-    .emailInput{
-        width: 70%;
-    }
-    .emailSubmit{
-        width: 30%;
-    }
-    .footerTop{
-        flex-direction: column;
-        justify-content: start;
-        gap: 10px;
-        border-top: 1.5px solid #2E3545;
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-    .copyright{
-        font-family: sans-serif;
-    }
-    .footerTop div:first-child{
-        justify-content: start;
-        width: 100%;
-    }
-    .footerTop div:last-child{
-        justify-content: space-evenly;
-        width: 100%;
-    }
-    .footerBottom{
-        flex-direction: column-reverse;
-        gap: 10px;
-    }
-    .imgCont{
-        margin-right: 0px;
-    }
-    .footerBottom div{
-        gap:60px;
-        width: 100%;
-    }
-    .copyright{
-        width: 97%;
-        margin-left: 1.5%;
-        text-align: left;
-        font-weight: 100;
-    }
-}
-
-nav ul .icon {
-    display: none;
-    padding: 0;
-}
-  
-@media screen and (max-width: 650px) {
-    nav ul li:not(:first-child) {display: none;}
-    nav ul li a.icon {
-        display: block;
-    }
-    nav ul li[name="buttons"]{
-        display: flex;
-    }
-    nav ul li[name="buttons"] a:not(:last-child) {display: none;}
-}
-
-@media screen and (max-width: 650px) {
-    nav ul.responsive {
-        flex-direction: column;
-        height: 300px;
-        padding-top: 5%;
-    }
-    nav ul.responsive li[name="buttons"] a:not(:last-child) {display: block;}
-
-    nav ul.responsive li {
-        display: block;
-    }
-}
-
-/* Ensure images scale correctly and maintain their shape */
-.gridBox img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-/* Adjust the grid layout and images for smaller screens */
-@media only screen and (max-width: 650px) {
-    .daPerks {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .gridBox {
-        width: 90%;
-        margin: 10px auto;
-        overflow: hidden; /* Ensure content stays within the box */
-        text-align: center; /* Center-align text and elements within gridBox */
-        padding: 20px; /* Add padding to ensure space around content */
-        box-sizing: border-box; /* Include padding in the element's total width and height */
-    }
-    .iconCont {
-        width: 100px; /* Fixed size to maintain circular shape */
-        height: 100px; /* Fixed size to maintain circular shape */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto 10px auto; /* Center the icon container and add margin below */
-        overflow: hidden; /* Hide overflow to maintain shape */
-        border-radius: 50%; /* Maintain circular shape */
-        background-color: #f5f5f5; /* Optional: add a background color */
-    }
-    .iconCont img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /* Ensure the image covers the container without distortion */
-    }
-    .gridBox h2 {
-        margin-top: 10px; /* Add margin to ensure space between icon and heading */
-    }
-    .gridBox p {
-        margin-top: 10px; /* Add margin to ensure space between heading and text */
-    }
-}
-
-@media (max-width: 768px) {
-    header {
-        height: auto;
-        padding: 10px 0;
-    }
-    .spacer {
-        height: auto;
-        padding: 10px 0;
-    }
-    .headerleft {
-        font-size: 14px; /* Example: Reduce font size */
-    }
-    .subTitle, .rectangle, .titleTextGradiant, .subtext7, .btnFluxcore2, .btnExtra {
-        margin: 10px 0; /* Example: Adjust margins */
+    .rent-btn {
+        font-size: 0.75rem;
+        padding: 4px 6px;
+    }
+    .cardCont {
+        padding: 10px;
+    }
+    .gpu-card h2 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    .gpu-card p {
+        font-size: 0.8rem;
     }
 }
