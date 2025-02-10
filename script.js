@@ -46,7 +46,7 @@ async function loadGpuCards() {
             card.innerHTML = `
                 <h2 class="sectionGPUTitleTextGrad">${gpu.short_name}</h2>
                 <p>${gpu.number_of_gpus} Available<br>Starting at $${formattedPrice} / h</p>
-        <a href="https://alpha.fluxedge.ai/" target="_blank" class="rent-btn gradientBorder">Rent Now</a>            `;
+        <a href="https://console.fluxedge.ai/" target="_blank" class="rent-btn gradientBorder">Rent Now</a>            `;
 
             gpuContainer.appendChild(card);
         });
